@@ -1,0 +1,9 @@
+{
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+    "emmet.excludeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    }
+}
