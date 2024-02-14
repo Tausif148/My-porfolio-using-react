@@ -70,6 +70,7 @@ ul {
     font-weight: 700;
     color: var(--text-black-900);
     position: relative;
+    color: green;
 }
 
 .section-title h2::before {
