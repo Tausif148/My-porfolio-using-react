@@ -54,7 +54,7 @@ const About = () => {
                                             <p>Phone:<span>+91 8793194591</span></p>
                                         </div>
                                         <div className='info-item padd-15'>
-                                            <p>City:<span>Nagpr</span></p>
+                                            <p>City:<span>Nagpur</span></p>
                                         </div>
                                         <div className='info-item padd-15'>
                                             <p>Freelance:<span>Available</span></p>
