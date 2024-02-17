@@ -20,7 +20,7 @@ import '../assets/js/script'
 const Contact
     = () => {
         return (
-            <section className='contact section'>
+            <section className='contact section' id="contact">
                 <div className='container'>
                     <div className='row'>
                         <div className='section-title padd-15'>

@@ -8,7 +8,7 @@
         left: -270px;
     }
 
-    .aside.open{
+    .aside.open {
         left: 0;
     }
 
@@ -71,4 +71,13 @@
 
 
 
+}
+
+
+
+@media (max-width:457px) {
+    .about .about-content .personal-info .info-item p span {
+
+        font-size: 13px;
+    }
 }
