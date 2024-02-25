@@ -59,6 +59,10 @@ const About = () => {
                                         <div className='info-item padd-15'>
                                             <p>Freelance:<span>Available</span></p>
                                         </div>
+
+                                       <div className='info-item padd-15'>
+                                            <p>Website:<span>www.sktausif.com</span></p>
+                                        </div>
                                     </div>
                                     <div className='row'>
                                         <div className='buttons padd-15'>
