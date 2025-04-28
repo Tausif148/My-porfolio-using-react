@@ -16,7 +16,7 @@ import '../assets/css/skins/color-1.css'
 import '../assets/js/script'
 
 // importing images for home component
-import profile from '../assets/img/profile-dp.jpg';
+import profile from '../assets/img/linkedin profile.jpg';
 
 
 export function Home() {
