@@ -16,6 +16,12 @@ import '../assets/css/skins/color-1.css'
 import '../assets/js/script'
 
 const Sidebar = () => {
+    // Function to handle the toggle click
+    const handleToggleClick = () => {
+        const aside = document.querySelector('.aside');
+        aside.classList.toggle('open');
+    };
+
     return (
         <div>
             <div className="aside">
@@ -23,7 +29,7 @@ const Sidebar = () => {
                     <a href='#'><span>T</span>ausif</a>
                 </div>
 
-                <div className='nav-toggler'>
+                <div className='nav-toggler' onClick={handleToggleClick}>
                     <span></span>
                 </div>
 
@@ -38,7 +44,6 @@ const Sidebar = () => {
         </div>
     )
 }
-
 
 export default Sidebar;
 

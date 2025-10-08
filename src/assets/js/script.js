@@ -1,18 +1,12 @@
-// import { click } from "@testing-library/user-event/dist/click";
 
+// color switcher
 // const styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
-
 // styleSwitcherToggle.addEventListener("click", () => {
-
 //     document.querySelector(".style-switcher").classList.toggle("open");
-
 // })
 
 
-
-
-
-
+// day night mode
 // const dayNight = document.querySelector(".day-night");
 // window.addEventListener("load", () => {
 
@@ -21,23 +15,7 @@
 //     } else {
 //         dayNight.querySelector("i").classList.add("fa-moon");
 //     }
-
-
 // })
 
 
 
-
-// const navTogglerBtn = document.querySelector(".nav-toggler"),
-//     aside = document.querySelector(".aside");
-
-
-
-// navTogglerBtn.addEventListener('click', () => {
-//     asideSectionTogglerBtn();
-// })
-
-
-// function asideSectionTogglerBtn(){
-//     aside.classList.toggle("open");
-// }
