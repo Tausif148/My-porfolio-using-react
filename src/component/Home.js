@@ -21,13 +21,14 @@ import profile from '../assets/img/linkedin profile.jpg';
 
 export function Home() {
     return (
-        <section className="home section ">
+        <section className="home section " id="home">
             <div className='container'>
                 <div className='row'>
                     <div className='home-info padd-15'>
                         <h3 className='hello'>Hello, my name is <span className='name'>Tausif Sheikh</span></h3>
                         <h3 className='my-profession'>I'm a <span className='typing'>Web Developer</span></h3>
-                        <p>n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available</p>
+                        <p>A passionate Frontend & Shopify Developer. Bringing digital ideas to life with slick, responsive web applications and custom Shopify solutions is what I thrive on.</p>
+                        <p>My journey has been filled with coding across HTML, CSS, JavaScript, and Liquid to create websites that not only look good but function seamlessly. I've helped businesses reach their online potential by customizing Shopify themes, integrating essential APIs, and enhancing user experiences. Problem-solving is part of my daily routine, whether it's fixing bugs or ensuring our sites play nice with all browsers.	</p>
                         <a href='#contact' className='btn hire-me'> Hire Me</a>
                     </div>
                     <div className='home-img'>
@@ -39,5 +40,5 @@ export function Home() {
     )
 }
 
-// export default Home;
+
 

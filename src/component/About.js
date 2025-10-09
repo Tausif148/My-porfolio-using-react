@@ -17,18 +17,18 @@ import '../assets/js/script'
 
 const About = () => {
     return (
-        <section className="section about ">
+        <section className="about section" id="about">
             <div className='container'>
                 <div className='row'>
-                    <div className='section-title padd-15'>
+                    <div className='section-title'>
                         <h2>About Me</h2>
                     </div>
                     <div className='row'>
                         <div className="about-content padd-15">
-                            <div className='row'>
+                            <div className='row '>
                                 <div className='about-text padd-15'>
-                                    <h3>I'm Tausif Sheikh and <span>Web Developer</span></h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                    <h3>I'm Tausif Sheikh As <span>Web Developer</span></h3>
+                                    <p>I'm a web developer with in-depth experience in UI design. In a nutshell, I create websites that help organizations address business challenges.</p>
                                 </div>
                             </div>
 
@@ -36,37 +36,67 @@ const About = () => {
                                 <div className='personal-info padd-15'>
                                     <div className='row'>
                                         <div className='info-item padd-15'>
-                                            <p>Birthday:<span>19 Nov 1999</span></p>
+                                            <p>
+                                                <span>Birthday:</span>
+                                                <span>19 Nov 1999</span>
+                                            </p>
                                         </div>
                                         <div className='info-item padd-15'>
-                                            <p>Age:<span>24</span></p>
+                                            <p>
+                                                <span>Age:</span>
+                                                <span>24</span>
+                                            </p>
                                         </div>
                                         <div className='info-item padd-15'>
-                                            <p>Website:<span>www.sktausif.com</span></p>
+                                            <p>
+                                                <span>LinkedIn:</span>
+                                                <a href='https://www.linkedin.com/in/tausifsheikh19/' target='_blank' rel='noopener noreferrer'>
+                                                    www.sktausif.com
+                                                </a>
+                                            </p>
                                         </div>
                                         <div className='info-item padd-15'>
-                                            <p>Email:<span>sheikhtousif148@gmail.com</span></p>
+                                            <p>
+                                                <span>Email:</span>
+                                                <span>sheikhtousif148@gmail.com</span>
+                                            </p>
                                         </div>
                                         <div className='info-item padd-15'>
-                                            <p>Degree:<span>BE</span></p>
+                                            <p>
+                                                <span>Degree:</span>
+                                                <span>BE</span>
+                                            </p>
                                         </div>
                                         <div className='info-item padd-15'>
-                                            <p>Phone:<span>+91 8793194591</span></p>
+                                            <p>
+                                                <span>Phone:</span>
+                                                <span>+91 8793194591</span>
+                                            </p>
                                         </div>
                                         <div className='info-item padd-15'>
-                                            <p>City:<span>Nagpur</span></p>
+                                            <p>
+                                                <span>City:</span>
+                                                <span>Nagpur</span>
+                                            </p>
                                         </div>
                                         <div className='info-item padd-15'>
-                                            <p>Freelance:<span>Available</span></p>
+                                            <p>
+                                                <span>Freelance:</span>
+                                                <span>Available</span>
+                                            </p>
                                         </div>
-
-                                       <div className='info-item padd-15'>
-                                            <p>Website:<span>www.sktausif.com</span></p>
+                                        <div className='info-item padd-15'>
+                                            <p>
+                                                <span>Github:</span>
+                                                <a href='https://github.com/Tausif148/' target='_blank' rel='noopener noreferrer'>
+                                                    https://github.com/Tausif148/
+                                                </a>
+                                            </p>
                                         </div>
                                     </div>
                                     <div className='row'>
-                                        <div className='buttons padd-15'>
-                                            <a href='#' className='btn'>Download</a>
+                                        <div className='buttons'>
+                                            <a href='https://drive.google.com/file/d/1lmjMHnpC4ehk354VLg_YIc4w5Y_hg7Am/view?usp=drive_link' target='_blank' className='btn'>Download CV</a>
                                             <a href='#contact' className='btn hire-me'>Hire Me</a>
                                         </div>
                                     </div>
@@ -96,97 +126,19 @@ const About = () => {
                                             </div>
                                         </div>
                                         <div className='skill-item padd-15'>
+                                            <h5>SHOPIFY</h5>
+                                            <div className='progress'>
+                                                <div className='progress-in' style={{ width: '86%' }}></div>
+                                                <div className='skill-percent'>86%</div>
+                                            </div>
+                                        </div>
+                                        <div className='skill-item padd-15'>
                                             <h5>REACT</h5>
                                             <div className='progress'>
                                                 <div className='progress-in' style={{ width: '45%' }}></div>
                                                 <div className='skill-percent'>45%</div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className='row'>
-                                <div className='education padd-15'>
-                                    <h3 className='title'>Education</h3>
-                                    <div className='row'>
-                                        <div className='timeline-box padd-15'>
-                                            <div className='timeline shadow-dark'>
-                                                {/* ========timeline item ========*/}
-                                                <div className='timeline-item'>
-                                                    <div className='cicle-dot'></div>
-                                                    <h3 className='timeline-date'>
-                                                        <i className='fa-solid fa-calendar-days'></i>2017-2021
-                                                    </h3>
-                                                    <h4 className='timeline-title'> Batchler of engineering</h4>
-                                                    <p className='timeline-text '>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
-                                                </div>
-
-                                                {/* ========timeline item ========*/}
-                                                <div className='timeline-item'>
-                                                    <div className='cicle-dot'></div>
-                                                    <h3 className='timeline-date'>
-                                                        <i className='fa-solid fa-calendar-days'></i>2017-2021
-                                                    </h3>
-                                                    <h4 className='timeline-title'> Batchler of engineering</h4>
-                                                    <p className='timeline-text '>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
-                                                </div>
-
-
-                                                {/* ========timeline item ========*/}
-                                                <div className='timeline-item'>
-                                                    <div className='cicle-dot'></div>
-                                                    <h3 className='timeline-date'>
-                                                        <i className='fa-solid fa-calendar-days'></i>2017-2021
-                                                    </h3>
-                                                    <h4 className='timeline-title'> Batchler of engineering</h4>
-                                                    <p className='timeline-text '>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div className='experience padd-15'>
-                                    <h3 className='title'>Experience</h3>
-                                    <div className='row'>
-                                        <div className='timeline-box padd-15'>
-                                            <div className='timeline shadow-dark'>
-                                                {/* ========timeline item ========*/}
-                                                <div className='timeline-item'>
-                                                    <div className='cicle-dot'></div>
-                                                    <h3 className='timeline-date'>
-                                                        <i className='fa-solid fa-calendar-days'></i>2017-2021
-                                                    </h3>
-                                                    <h4 className='timeline-title'> Batchler of engineering</h4>
-                                                    <p className='timeline-text '>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
-                                                </div>
-
-                                                {/* ========timeline item ========*/}
-                                                <div className='timeline-item'>
-                                                    <div className='cicle-dot'></div>
-                                                    <h3 className='timeline-date'>
-                                                        <i className='fa-solid fa-calendar-days'></i>2017-2021
-                                                    </h3>
-                                                    <h4 className='timeline-title'> Batchler of engineering</h4>
-                                                    <p className='timeline-text '>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
-                                                </div>
-
-
-                                                {/* ========timeline item ========*/}
-                                                <div className='timeline-item'>
-                                                    <div className='cicle-dot'></div>
-                                                    <h3 className='timeline-date'>
-                                                        <i className='fa-solid fa-calendar-days'></i>2017-2021
-                                                    </h3>
-                                                    <h4 className='timeline-title'> Batchler of engineering</h4>
-                                                    <p className='timeline-text '>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -199,4 +151,4 @@ const About = () => {
     )
 }
 
-export default About;                                                         
+export default About;

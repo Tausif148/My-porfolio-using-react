@@ -14,13 +14,56 @@ import '../assets/css/skins/color-1.css'
 
 // js
 import '../assets/js/script'
+import React, { useState, useEffect } from 'react';
+
+const sections = [
+    { id: 'home', icon: 'fa-home', label: 'Home' },
+    { id: 'about', icon: 'fa-user', label: 'About' },
+    { id: 'experience', icon: 'fa-laptop-code', label: 'Experience' },
+    { id: 'services', icon: 'fa-list', label: 'Services' },
+    { id: 'portfolio', icon: 'fa-briefcase', label: 'Portfolio' },
+    { id: 'contact', icon: 'fa-comments', label: 'Contact' },
+];
 
 const Sidebar = () => {
+    const [activeSection, setActiveSection] = useState('home');
+
     // Function to handle the toggle click
     const handleToggleClick = () => {
         const aside = document.querySelector('.aside');
         aside.classList.toggle('open');
     };
+
+    // Smooth scroll and set active section
+    const handleNavClick = (e, sectionId) => {
+        e.preventDefault();
+        setActiveSection(sectionId);
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+    // Listen to scroll and update active section
+    useEffect(() => {
+        const handleScroll = () => {
+            let found = false;
+            for (const sec of sections) {
+                const el = document.getElementById(sec.id);
+                if (el) {
+                    const rect = el.getBoundingClientRect();
+                    if (rect.top <= 80 && rect.bottom > 80) {
+                        setActiveSection(sec.id);
+                        found = true;
+                        break;
+                    }
+                }
+            }
+            if (!found) setActiveSection('home');
+        };
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     return (
         <div>
@@ -34,11 +77,17 @@ const Sidebar = () => {
                 </div>
 
                 <ul className='nav'>
-                    <li><a href="#" className="active"><i className='fa fa-home'></i>Home</a></li>
-                    <li><a href="#"><i className='fa fa-user'></i>About</a></li>
-                    <li><a href="#"><i className='fa fa-list'></i>Services</a></li>
-                    <li><a href="#"><i className='fa fa-briefcase'></i>Portfolio</a></li>
-                    <li><a href="#"><i className='fa fa-comments'></i>Contact</a></li>
+                    {sections.map(sec => (
+                        <li key={sec.id}>
+                            <a
+                                href={`#${sec.id}`}
+                                className={activeSection === sec.id ? 'active' : ''}
+                                onClick={e => handleNavClick(e, sec.id)}
+                            >
+                                <i className={`fa ${sec.icon}`}></i>{sec.label}
+                            </a>
+                        </li>
+                    ))}
                 </ul>
             </div>
         </div>

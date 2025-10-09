@@ -10,10 +10,10 @@ import './assets/css/style-switcher.css'
 
 //  style switcher
 import './assets/css/skins/color-1.css'
-  // import './assets/css/skins/color-2.css'
-  // import './assets/css/skins/color-3.css'
-  // import './assets/css/skins/color-4.css'
-  // import './assets/css/skins/color-5.css'
+// import './assets/css/skins/color-2.css'
+// import './assets/css/skins/color-3.css'
+// import './assets/css/skins/color-4.css'
+// import './assets/css/skins/color-5.css'
 
 // js
 import './assets/js/script'
@@ -23,10 +23,11 @@ import './assets/js/script'
 import Sidebar from './component/Sidebar'
 import { Home } from './component/Home';
 import About from './component/About'
+import Experience from './component/Experience';
 import Service from './component/Service';
 import Portfolio from './component/Portfolio';
 import Contact from './component/Contact';
-import Style_Switcher from './component/Style_Switcher';
+
 
 
 
@@ -39,10 +40,11 @@ root.render(
       <div className='main-content'>
         <Home />
         <About />
+        <Experience />
         <Service />
         <Portfolio />
         <Contact />
-        <Style_Switcher />
+        {/* <Style_Switcher /> */}
       </div>
 
     </div>

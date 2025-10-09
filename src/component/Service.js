@@ -18,10 +18,10 @@ import '../assets/js/script'
 
 const Service = () => {
     return (
-        <section className='service section '>
+        <section className='service section ' id="services">
             <div className='container'>
                 <div className='row'>
-                    <div className='section-title padd-15'>
+                    <div className='section-title'>
                         <h2>Service</h2>
                     </div>
                 </div>

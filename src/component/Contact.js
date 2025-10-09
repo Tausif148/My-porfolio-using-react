@@ -23,53 +23,9 @@ const Contact
             <section className='contact section' id="contact">
                 <div className='container'>
                     <div className='row'>
-                        <div className='section-title padd-15'>
+                        <div className='section-title'>
                             <h2>Contact Me</h2>
                         </div>
-                    </div>
-
-                    <h3 className='contact-title padd-15'>Have You Any Questions ?</h3>
-                    <h4 className='contact-sub-title padd-15'>I'M AT YOUR SERVICES</h4>
-
-                    <div className='row'>
-                        <div className='contact-info-item padd-15'>
-                            <div className='icon'>
-                                <i className='fa fa-phone'></i>
-                                <h4 >Call Us On</h4>
-                                <p>+91 8793194591</p>
-                            </div>
-                        </div>
-                        {/* ========contact info item ========*/}
-
-                        {/* ========contact info item ========*/}
-                        <div className='contact-info-item padd-15' >
-                            <div className='icon'>
-                                <i className='fa fa-map-marker-alt'></i>
-                                <h4 >City</h4>
-                                <p>Nagpur</p>
-                            </div>
-                        </div>
-                        {/* ========contact info item ========*/}
-
-                        {/* ========contact info item ========*/}
-                        <div className='contact-info-item padd-15'>
-                            <div className='icon'>
-                                <i className='fa fa-envelope'></i>
-                                <h4 >Email</h4>
-                                <p>sheikhtousif148@gmail.com</p>
-                            </div>
-                        </div>
-                        {/* ========contact info item ========*/}
-
-                        {/* ========contact info item ========*/}
-                        <div className='contact-info-item padd-15'>
-                            <div className='icon'>
-                                <i className='fa fa-globe-europe'></i>
-                                <h4 >Website</h4>
-                                <p>wwww.sktausif.com</p>
-                            </div>
-                        </div>
-                        {/* ========contact info item ========*/}
                     </div>
 
                     <h3 className='contact-title padd-15'>SEND ME AN EMAIL</h3>
@@ -110,7 +66,7 @@ const Contact
 
                             <div className='row'>
                                 <div className='form-item col-12 padd-15'>
-                                    <div className='form-group'>
+                                    <div className='form-group' style={{ display: 'flex', justifyContent: 'center' }}>
                                         <button type='submit' className='btn'> Send Message</button>
                                     </div>
                                 </div>
