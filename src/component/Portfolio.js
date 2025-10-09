@@ -112,7 +112,7 @@ const Portfolio = () => {
                                     href={proj.link}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="portfolio-item padd-15"
+                                    className="portfolio-item"
                                 >
                                     <div className="portfolio-item-inner shadow-dark">
                                         <div className="portfolio-img">
