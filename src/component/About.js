@@ -46,14 +46,7 @@ const About = () => {
                                                 <span>24</span>
                                             </p>
                                         </div>
-                                        <div className='info-item padd-15'>
-                                            <p>
-                                                <span>LinkedIn:</span>
-                                                <a href='https://www.linkedin.com/in/tausifsheikh19/' target='_blank' rel='noopener noreferrer'>
-                                                    www.sktausif.com
-                                                </a>
-                                            </p>
-                                        </div>
+
                                         <div className='info-item padd-15'>
                                             <p>
                                                 <span>Email:</span>
@@ -89,6 +82,14 @@ const About = () => {
                                                 <span>Github:</span>
                                                 <a href='https://github.com/Tausif148/' target='_blank' rel='noopener noreferrer'>
                                                     https://github.com/Tausif148/
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <div className='info-item padd-15'>
+                                            <p>
+                                                <span>LinkedIn:</span>
+                                                <a href='https://www.linkedin.com/in/tausifsheikh19/' target='_blank' rel='noopener noreferrer'>
+                                                    www.linkedin.com/in/tausifsheikh19/
                                                 </a>
                                             </p>
                                         </div>
