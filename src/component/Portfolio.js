@@ -6,24 +6,43 @@ import '../assets/css/skins/color-1.css';
 // import '../assets/css/skins/color-3.css';
 // import '../assets/css/skins/color-4.css';
 // import '../assets/css/skins/color-5.css';
-import '../assets/js/script';
+// import '../assets/js/script';
 
+// Basic projects
+import calculator from '../assets/img/Projects_basic/calculator.png';
+import currency_convertor from '../assets/img/Projects_basic/currency_convertor.png';
+import Digital_clock from '../assets/img/Projects_basic/digital_clock.png';
+import Weather_Web_App from '../assets/img/Projects_basic/weather_web_app.png';
 
-import project_1 from '../assets/img/project-1.jpeg';
-import project_2 from '../assets/img/project-2.jpg';
-import project_3 from '../assets/img/project-3.jpeg';
-import project_4 from '../assets/img/project-4.jpeg';
-import project_5 from '../assets/img/project-5.jpg';
-import project_6 from '../assets/img/project-6.jpg';
+// Shopify projects
+import aroma from '../assets/img/Projects_shopify/Aroma.png';
+import petstore from '../assets/img/Projects_shopify/Pet_Store.png';
 
-// Simple Tabs component
+// PHP projects
+import guestbook from '../assets/img/Projects_php/guestbook.png';
+
+// Add missing basic project images to allProjects
+const allProjects = [
+    { src: calculator, alt: 'Calculator', link: 'https://tausif148.github.io/My-calculator/' },
+    { src: currency_convertor, alt: 'Currency Convertor', link: 'https://tausif148.github.io/My-currency-convertor/' },
+    { src: Digital_clock, alt: 'Digital Clock', link: 'https://tausif148.github.io/My-digital-clock/' },
+    { src: Weather_Web_App, alt: 'Weather Web App', link: 'https://tausif148.github.io/My-weather-app/' },
+    { src: aroma, alt: 'Aroma', link: 'https://aroma-demo.myshopify.com/' },
+    { src: petstore, alt: 'Pet Store', link: 'https://heavnn.myshopify.com/' },
+    { src: guestbook, alt: 'Guestbook', link: 'http://guestbook.infinityfreeapp.com/' }
+];
+
+// Example: filter projects for each tab (customize as needed)
+const basicProjects = allProjects.slice(0, 4);
+const shopifyProjects = allProjects.slice(4, 6);
+const phpProjects = allProjects.slice(6, 7);
+
 const Tabs = ({ tabsList, children }) => {
     const [activeTab, setActiveTab] = useState(0);
 
     return (
         <div className="tabs-container padd-15" style={{ width: '100%' }}>
             <div className="tabs-header" style={{ display: 'flex', gap: '10px', marginBottom: '20px', flexDirection: 'row', overflowX: 'auto', overflowY: 'hidden', WebkitOverflowScrolling: 'touch', padding: '1rem 0', border: 'none', scrollSnapType: 'x mandatory' }}>
-
                 {tabsList.map((tab, idx) => (
                     <button
                         key={tab}
@@ -53,22 +72,8 @@ const Tabs = ({ tabsList, children }) => {
     );
 };
 
-const allProjects = [
-    { src: project_1, alt: 'Project-1', link: '#' },
-    { src: project_2, alt: 'Project-2', link: '#' },
-    { src: project_3, alt: 'Project-3', link: '#' },
-    { src: project_4, alt: 'Project-4', link: '#' },
-    { src: project_5, alt: 'Project-5', link: '#' },
-    { src: project_6, alt: 'Project-6', link: '#' },
-];
-
-// Example: filter projects for each tab (customize as needed)
-const basicProjects = [allProjects[0], allProjects[1]];
-const shopifyProjects = [allProjects[2], allProjects[3]];
-const reactProjects = [allProjects[4], allProjects[5]];
-
 const Portfolio = () => {
-    const tabsList = ['All', 'Basic', 'Shopify Theme', 'React'];
+    const tabsList = ['All', 'Basic', 'Shopify Theme', 'PHP '];
 
     return (
         <section className="portfolio section" id="portfolio">
@@ -79,7 +84,7 @@ const Portfolio = () => {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="portfolio-heading padd-15">
+                    <div className="portfolio-heading">
                         <h2>My Latest Projects: </h2>
                     </div>
                 </div>
@@ -139,23 +144,27 @@ const Portfolio = () => {
                                 </a>
                             ))}
                         </div>
-                        {/* Tab 4: React Projects */}
+                        {/* Tab 4: php Projects */}
                         <div className="portfolio-grid">
-                            {reactProjects.map((proj) => (
-                                <a
-                                    key={proj.alt}
-                                    href={proj.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="portfolio-item"
-                                >
-                                    <div className="portfolio-item-inner shadow-dark">
-                                        <div className="portfolio-img">
-                                            <img src={proj.src} alt={proj.alt} />
+                            {phpProjects.length === 0 ? (
+                                <p>No PHP projects available.</p>
+                            ) : (
+                                phpProjects.map((proj) => (
+                                    <a
+                                        key={proj.alt}
+                                        href={proj.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="portfolio-item"
+                                    >
+                                        <div className="portfolio-item-inner shadow-dark">
+                                            <div className="portfolio-img">
+                                                <img src={proj.src} alt={proj.alt} />
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
-                            ))}
+                                    </a>
+                                ))
+                            )}
                         </div>
                     </Tabs>
                 </div>

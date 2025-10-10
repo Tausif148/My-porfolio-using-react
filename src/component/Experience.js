@@ -25,7 +25,46 @@ const Experience = () => {
                     <div className='row'>
                         <div className="about-content padd-15">
 
-                            <div className='row column-reverse'>
+                            <div className='row'>
+   <div className='experience padd-15'>
+                                    <h3 className='title'>Experience</h3>
+                                    <div className='row'>
+                                        <div className='timeline-box padd-15'>
+                                            <div className='timeline shadow-dark'>
+
+                                                {/* ========timeline item ========*/}
+                                                <div className='timeline-item'>
+                                                    <div className='cicle-dot'></div>
+                                                    <h3 className='timeline-date'>
+                                                        <i className='fa-solid fa-calendar-days'></i>2022 - Present
+                                                    </h3>
+                                                    <h4 className='timeline-title'>Frontend & Shopify Developer — Vowel Web, Nagpur</h4>
+                                                    <p className='timeline-text'>
+                                                        Specialize in end-to-end custom Shopify theme development, delivering unique e-commerce solutions from concept to deployment.
+                                                        Focus on performance optimization, mobile responsiveness, and cross-browser compatibility.
+                                                    </p>
+
+                                                    <p className='timeline-text' style={{ margin: '1rem 0' }}>Build performant and responsive themes using Liquid templating, modern CSS, JavaScript, and Shopify CLI. Develop custom Shopify theme components, dynamic sections, and advanced functionality using Liquid, JavaScript, and Shopify's theme architecture.</p>
+                                                </div>
+
+                                                {/* ========timeline item ========*/}
+                                                <div className='timeline-item'>
+                                                    <div className='cicle-dot'></div>
+                                                    <h3 className='timeline-date'>
+                                                        <i className='fa-solid fa-calendar-days'></i>2021 - 2022
+                                                    </h3>
+                                                    <h4 className='timeline-title'>Web Developer Trainee — Codeosity</h4>
+                                                    <p className='timeline-text'>
+                                                        My training provided a comprehensive foundation in front-end development, covering HTML, CSS, JavaScript, and PHP to build dynamic, user-focused websites. I solidified this knowledge by working on real-world projects, which sharpened my problem-solving skills and ability to write efficient, production-ready code.                                               </p>
+
+                                                    <p className='timeline-text' style={{ margin: '1rem 0' }}>Through structured training in HTML, CSS, JavaScript, and PHP, I gained a strong foundation in web development. This was enhanced by hands-on project work, which improved my practical skills and problem-solving abilities.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div className='education padd-15'>
                                     <h3 className='title'>Education</h3>
                                     <div className='row'>
@@ -75,44 +114,7 @@ const Experience = () => {
                                     </div>
                                 </div>
 
-                                <div className='experience padd-15'>
-                                    <h3 className='title'>Experience</h3>
-                                    <div className='row'>
-                                        <div className='timeline-box padd-15'>
-                                            <div className='timeline shadow-dark'>
-
-                                                {/* ========timeline item ========*/}
-                                                <div className='timeline-item'>
-                                                    <div className='cicle-dot'></div>
-                                                    <h3 className='timeline-date'>
-                                                        <i className='fa-solid fa-calendar-days'></i>2022 - Present
-                                                    </h3>
-                                                    <h4 className='timeline-title'>Frontend & Shopify Developer — Vowel Web, Nagpur</h4>
-                                                    <p className='timeline-text'>
-                                                        Specialize in end-to-end custom Shopify theme development, delivering unique e-commerce solutions from concept to deployment.
-                                                        Focus on performance optimization, mobile responsiveness, and cross-browser compatibility.
-                                                    </p>
-
-                                                    <p className='timeline-text' style={{ margin: '1rem 0' }}>Build performant and responsive themes using Liquid templating, modern CSS, JavaScript, and Shopify CLI. Develop custom Shopify theme components, dynamic sections, and advanced functionality using Liquid, JavaScript, and Shopify's theme architecture.</p>
-                                                </div>
-
-                                                {/* ========timeline item ========*/}
-                                                <div className='timeline-item'>
-                                                    <div className='cicle-dot'></div>
-                                                    <h3 className='timeline-date'>
-                                                        <i className='fa-solid fa-calendar-days'></i>2021 - 2022
-                                                    </h3>
-                                                    <h4 className='timeline-title'>Web Developer Trainee — Codeosity</h4>
-                                                    <p className='timeline-text'>
-                                                        My training provided a comprehensive foundation in front-end development, covering HTML, CSS, JavaScript, and PHP to build dynamic, user-focused websites. I solidified this knowledge by working on real-world projects, which sharpened my problem-solving skills and ability to write efficient, production-ready code.                                               </p>
-
-                                                    <p className='timeline-text' style={{ margin: '1rem 0' }}>Through structured training in HTML, CSS, JavaScript, and PHP, I gained a strong foundation in web development. This was enhanced by hands-on project work, which improved my practical skills and problem-solving abilities.</p>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                             
 
                             </div>
                         </div>
