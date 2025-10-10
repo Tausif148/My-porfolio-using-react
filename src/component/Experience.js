@@ -1,6 +1,5 @@
 //importing css and js
 import '../assets/css/style.css'
-import '../assets/css/responsive.css'
 import '../assets/css/style-switcher.css'
 
 //  style switcher

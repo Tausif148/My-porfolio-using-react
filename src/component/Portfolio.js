@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '../assets/css/style.css';
-import '../assets/css/responsive.css';
 import '../assets/css/style-switcher.css';
 import '../assets/css/skins/color-1.css';
 // import '../assets/css/skins/color-2.css';

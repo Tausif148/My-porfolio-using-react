@@ -1,6 +1,5 @@
 //importing css and js
 import '../assets/css/style.css'
-import '../assets/css/responsive.css'
 import '../assets/css/style-switcher.css'
 
 //  style switcher
@@ -96,7 +95,7 @@ const About = () => {
                                     </div>
                                     <div className='row'>
                                         <div className='buttons'>
-                                            <a href='https://drive.google.com/file/d/1lmjMHnpC4ehk354VLg_YIc4w5Y_hg7Am/view?usp=drive_link' target='_blank' className='btn'>Download CV</a>
+                                            <a href='https://drive.google.com/file/d/1lmjMHnpC4ehk354VLg_YIc4w5Y_hg7Am/view?usp=drive_link' rel='noopener noreferrer' target='_blank' className='btn'>Download CV</a>
                                             <a href='#contact' className='btn hire-me'>Hire Me</a>
                                         </div>
                                     </div>

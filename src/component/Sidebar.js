@@ -1,6 +1,5 @@
 //importing css and js
 import '../assets/css/style.css'
-import '../assets/css/responsive.css'
 import '../assets/css/style-switcher.css'
 
 //  style switcher
@@ -20,7 +19,7 @@ const sections = [
     { id: 'home', icon: 'fa-home', label: 'Home' },
     { id: 'about', icon: 'fa-user', label: 'About' },
     { id: 'experience', icon: 'fa-laptop-code', label: 'Experience' },
-    { id: 'services', icon: 'fa-list', label: 'Services' },
+    // { id: 'services', icon: 'fa-list', label: 'Services' },
     { id: 'portfolio', icon: 'fa-briefcase', label: 'Portfolio' },
     { id: 'contact', icon: 'fa-comments', label: 'Contact' },
 ];
@@ -69,7 +68,7 @@ const Sidebar = () => {
         <div>
             <div className="aside">
                 <div className='logo'>
-                    <a href='#'><span>T</span>ausif</a>
+                    <a href='#home'><span>T</span>ausif</a>
                 </div>
 
                 <div className='nav-toggler' onClick={handleToggleClick}>

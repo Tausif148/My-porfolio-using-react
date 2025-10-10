@@ -236,12 +236,14 @@ ul {
 /* When .aside.open is added, transform the span into a cross */
 .aside.open .nav-toggler span::before {
     transform: rotate(45deg);
-    top: 0; /* Move it into the center */
+    top: 0;
+    /* Move it into the center */
 }
 
 .aside.open .nav-toggler span {
     transform: rotate(90deg);
-    background: transparent; /* Hide the original bar */
+    background: transparent;
+    /* Hide the original bar */
 }
 
 /* Adding the second line for the cross */
@@ -421,7 +423,7 @@ h3 .my-profession {
     margin-left: 6px;
     display: inline-block;
     font-size: 13.5px;
- 
+
 }
 
 .about .about-content .personal-info .info-item p a {
@@ -430,7 +432,7 @@ h3 .my-profession {
     margin-left: 6px;
     display: inline-block;
     text-decoration: none;
-        font-size: 13.5px;
+    font-size: 13.5px;
 }
 
 .about .about-content .personal-info .buttons {
@@ -670,7 +672,8 @@ h3 .my-profession {
 /* Grid styling for portfolio items */
 .portfolio .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(4,1fr); /* Make grid responsive */
+    grid-template-columns: repeat(4, 1fr);
+    /* Make grid responsive */
     gap: 15px;
 }
 
@@ -697,8 +700,8 @@ h3 .my-profession {
     display: block;
     border-radius: 8px;
     max-width: 100%;
-        height: 185px;
-        object-fit: cover;
+    height: 185px;
+    object-fit: cover;
 }
 
 /* Tabs styling */
@@ -736,13 +739,15 @@ h3 .my-profession {
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .portfolio .portfolio-grid {
-        grid-template-columns: 1fr 1fr; /* Two columns on smaller screens */
+        grid-template-columns: 1fr 1fr;
+        /* Two columns on smaller screens */
     }
 }
 
 @media screen and (max-width: 480px) {
     .portfolio .portfolio-grid {
-        grid-template-columns: 1fr; /* One column on mobile */
+        grid-template-columns: 1fr;
+        /* One column on mobile */
     }
 }
 
@@ -838,4 +843,170 @@ h3 .my-profession {
     height: 50px;
     padding: 0 50px;
     cursor: pointer;
+}
+
+
+
+/* ===================  RESPONSIVE ==================== */
+@media (max-width:1199px) {
+    .aside {
+        width: 350px;
+        min-width: 180px;
+        background: var(--bg-black-100);
+        position: fixed;
+        left: -350px;
+        /* Sidebar is off-screen initially */
+        top: 0;
+        height: 100%;
+        z-index: 10;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid var(--bg-black-50);
+        transition: left 0.3s ease;
+        /* Smooth transition for sliding */
+    }
+
+    /* Open state of the sidebar */
+    .aside.open {
+        left: 0;
+        /* When open, it will slide in from the left */
+    }
+
+    .main-content {
+        padding-left: 0;
+    }
+
+    .aside .nav-toggler {
+        display: flex;
+        right: 20px;
+        top: 20px;
+        left: auto;
+    }
+
+    .about .about-content .personal-info {
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width:991px) {
+    .home .home-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 2rem 1rem;
+    }
+
+    .service .service-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .service .service-item {
+        margin-bottom: 20px;
+    }
+
+    .portfolio .portfolio-item,
+    .contact .contact-info-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .home .home-img {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .home.section .row {
+        flex-direction: column-reverse;
+    }
+
+    .section {
+        padding: 0 20px;
+    }
+
+    .home .home-img::before {
+        left: -15px;
+        top: -15px;
+    }
+
+    .home .home-img::after {
+        right: -15px;
+        bottom: -15px;
+    }
+
+    .section-title h2 {
+        text-align: center;
+    }
+
+    .section-title h2::before {
+        left: 45%;
+    }
+
+    .section-title h2::after {
+        left: 45%;
+    }
+}
+
+
+
+
+
+@media (max-width:767px) {
+
+    .about .about-content .personal-info,
+    .about .about-content .skills,
+    .about .about-content .education,
+    .about .about-content .experience,
+    .service .service-item,
+    .portfolio .portfolio-item,
+    .contact .contact-info-item,
+    .contact .contact-form .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .main-content {
+        padding: 1rem;
+    }
+
+
+    .aside.open {
+        width: 380px;
+    }
+
+    .aside .nav-toggler {
+        right: 10px;
+        top: 10px;
+    }
+
+    .column-reverse {
+        flex-direction: column-reverse;
+    }
+}
+
+
+
+@media (max-width:640px) {
+    .about .about-content .personal-info .info-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .main-content {
+        padding: 0.5rem;
+    }
+
+    .aside.open {
+        width: 280px;
+
+    }
+
+    .aside .nav-toggler {
+        right: 20px;
+        top: 15px;
+    }
 }

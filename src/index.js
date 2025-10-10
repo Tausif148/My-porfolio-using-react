@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom/client';
 
 //importing css and js
 import './assets/css/style.css'
-import './assets/css/responsive.css'
 import './assets/css/style-switcher.css'
 
 
@@ -24,7 +23,7 @@ import Sidebar from './component/Sidebar'
 import { Home } from './component/Home';
 import About from './component/About'
 import Experience from './component/Experience';
-import Service from './component/Service';
+// import Service from './component/Service';
 import Portfolio from './component/Portfolio';
 import Contact from './component/Contact';
 
@@ -41,7 +40,7 @@ root.render(
         <Home />
         <About />
         <Experience />
-        <Service />
+        {/* <Service /> */}
         <Portfolio />
         <Contact />
         {/* <Style_Switcher /> */}
