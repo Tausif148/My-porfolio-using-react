@@ -88,6 +88,23 @@ const Sidebar = () => {
                         </li>
                     ))}
                 </ul>
+
+
+                <div className='socials'>
+                    <a className='social_icon' href='#' target="_blank" rel="noopener noreferrer">
+                        <i className='fa-brands fa-instagram'></i>
+                    </a>
+                    <a className='social_icon' href='#' target="_blank" rel="noopener noreferrer">
+                        <i className='fa-brands fa-linkedin'></i>
+                    </a>
+                    <a className='social_icon' href='#' target="_blank" rel="noopener noreferrer">
+                        <i className='fa-brands fa-github'></i>
+                    </a>
+                    <a className='social_icon' href='#' target="_blank" rel="noopener noreferrer">
+                        <i className='fa-brands fa-whatsapp'></i>
+                    </a>
+                </div>
+
             </div>
         </div>
     )

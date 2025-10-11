@@ -287,6 +287,51 @@ ul {
 }
 
 
+/* -------------Socials media------------ */
+.socials {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    gap: 15px;
+}
+
+.social_icon {
+    height: 35px;
+    width: 35px;
+    border: 1px solid var(--bg-black-50);
+    background-color: var(--skin-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--text-black-900);
+    transition: all 0.3s ease;
+}
+
+.social_icon .fa path {
+    fill: var(--bg-black-100);
+}
+
+.social_icon i {
+    font-size: 16px;
+    color: var(--bg-black-100);
+}
+
+.social_icon .fa path {
+    fill: var(--bg-black-100);
+}
+
+.social_icon:hover {
+    background-color: var(--bg-black-100);
+    color: var(--skin-color);
+    transform: scale(1.1);
+    border-color: var(--skin-color);
+}
+
+.social_icon:hover i {
+    color: var(--skin-color);
+}
+
 /* ---------------------home--------------------- */
 .home .home-info {
     flex: 0 0 60%;
