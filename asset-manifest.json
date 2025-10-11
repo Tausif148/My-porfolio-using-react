@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/My-porfolio-using-react/static/css/main.48b2304a.css",
+    "main.js": "/My-porfolio-using-react/static/js/main.7e477417.js",
+    "static/media/Pet_Store.png": "/My-porfolio-using-react/static/media/Pet_Store.b5bc9b914402efbc2202.png",
+    "static/media/Aroma.png": "/My-porfolio-using-react/static/media/Aroma.0e6a0090ce8ef0625a5a.png",
+    "static/media/weather_web_app.png": "/My-porfolio-using-react/static/media/weather_web_app.678fb1693a00556033dd.png",
+    "static/media/digital_clock.png": "/My-porfolio-using-react/static/media/digital_clock.4f20ecae94b191cf5f46.png",
+    "static/media/linkedin profile.jpg": "/My-porfolio-using-react/static/media/linkedin profile.7a49f061a6ca8d12e1e2.jpg",
+    "static/media/calculator.png": "/My-porfolio-using-react/static/media/calculator.ceb8785eb2384ff1e86e.png",
+    "static/media/guestbook.png": "/My-porfolio-using-react/static/media/guestbook.2d5f1e08433ebf45978a.png",
+    "static/media/currency_convertor.png": "/My-porfolio-using-react/static/media/currency_convertor.cff6b189369b0d148a47.png",
+    "index.html": "/My-porfolio-using-react/index.html",
+    "main.48b2304a.css.map": "/My-porfolio-using-react/static/css/main.48b2304a.css.map",
+    "main.7e477417.js.map": "/My-porfolio-using-react/static/js/main.7e477417.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48b2304a.css",
+    "static/js/main.7e477417.js"
+  ]
+}
