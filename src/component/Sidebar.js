@@ -91,7 +91,7 @@ const Sidebar = () => {
 
 
                 <div className='socials'>
-                    <a className='social_icon' href='#' target="_blank" rel="noopener noreferrer">
+                    <a className='social_icon' href='https://www.instagram.com/sk.tausif_19' target="_blank" rel="noopener noreferrer">
                         <i className='fa-brands fa-instagram'></i>
                     </a>
                     <a className='social_icon' href='https://linkedin.com/in/tausifsheikh19/' target="_blank" rel="noopener noreferrer">
