@@ -389,7 +389,7 @@ h3 .my-profession {
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
     right: 20px;
-    bottom: -40px;
+    bottom: -20px;
 
 }
 
@@ -400,8 +400,8 @@ h3 .my-profession {
     width: 80px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
-    left: -20px;
-    top: -40px;
+    left: 20px;
+    top: -20px;
 
 }
 
@@ -786,14 +786,12 @@ h3 .my-profession {
 @media screen and (max-width: 768px) {
     .portfolio .portfolio-grid {
         grid-template-columns: 1fr 1fr;
-        /* Two columns on smaller screens */
     }
 }
 
 @media screen and (max-width: 480px) {
     .portfolio .portfolio-grid {
         grid-template-columns: 1fr;
-        /* One column on mobile */
     }
 }
 
@@ -894,84 +892,28 @@ h3 .my-profession {
 
 
 /* ===================  RESPONSIVE ==================== */
-@media (max-width:1199px) {
-    .aside {
-        width: 350px;
-        min-width: 180px;
-        background: var(--bg-black-100);
-        position: fixed;
-        left: -350px;
-        /* Sidebar is off-screen initially */
-        top: 0;
-        height: 100%;
-        z-index: 10;
-        padding: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-right: 1px solid var(--bg-black-50);
-        transition: left 0.3s ease;
-        /* Smooth transition for sliding */
+
+/* === 1450px and below === */
+@media (max-width: 1450px) {
+    .container {
+        max-width: 1050px;
     }
 
-    /* Open state of the sidebar */
-    .aside.open {
-        left: 0;
-        /* When open, it will slide in from the left */
+    .home .home-img::before {
+        left: -10px;
+        top: -20px;
     }
 
-    .main-content {
-        padding-left: 0;
-    }
-
-    .aside .nav-toggler {
-        display: flex;
-        right: 20px;
-        top: 20px;
-        left: auto;
-    }
-
-    .about .about-content .personal-info {
-        margin-top: 20px;
+    .home .home-img::after {
+        right: -10px;
+        bottom: -20px;
     }
 }
 
-
-@media (max-width:991px) {
-    .home .home-info {
-        flex: 0 0 100%;
-        max-width: 100%;
-        padding: 2rem 1rem;
-    }
-
-    .service .service-item {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-
-    .service .service-item {
-        margin-bottom: 20px;
-    }
-
-    .portfolio .portfolio-item,
-    .contact .contact-info-item {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-
-    .home .home-img {
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin-top: 3rem;
-        margin-bottom: 2rem;
-    }
-
-    .home.section .row {
-        flex-direction: column-reverse;
-    }
-
-    .section {
-        padding: 0 20px;
+/* === 1350px and below === */
+@media (max-width: 1350px) {
+    .container {
+        max-width: 960px;
     }
 
     .home .home-img::before {
@@ -983,25 +925,115 @@ h3 .my-profession {
         right: -15px;
         bottom: -15px;
     }
+}
 
-    .section-title h2 {
-        text-align: center;
+/* === 1199px and below (Tablet Landscape) === */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 850px;
     }
 
-    .section-title h2::before {
-        left: 45%;
+    /* Sidebar behavior */
+    .aside {
+        width: 350px;
+        min-width: 180px;
+        background: var(--bg-black-100);
+        position: fixed;
+        left: -350px;
+        top: 0;
+        height: 100%;
+        z-index: 10;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid var(--bg-black-50);
+        transition: left 0.3s ease;
     }
 
-    .section-title h2::after {
-        left: 45%;
+    .aside.open {
+        left: 0;
+    }
+
+    .aside .nav-toggler {
+        display: flex;
+        right: 20px;
+        top: 20px;
+        left: auto;
+    }
+
+    .main-content {
+        padding-left: 0;
+    }
+
+    .about .about-content .personal-info {
+        margin-top: 20px;
     }
 }
 
+/* === 991px and below (Tablet Portrait) === */
+@media (max-width: 991px) {
 
+    .section {
+        /* border: 1px solid red; */
+        width: 98%;
+        margin: 0 auto;
+    }
 
+    .container {
+        max-width: 100%;
+    }
 
+    .home .home-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 2rem 0;
+    }
 
-@media (max-width:767px) {
+    .home .home-img {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 3rem 0 2rem 0;
+    }
+
+    .home .home-img::before {
+        left: 25%;
+        top: -15px;
+    }
+
+    .home .home-img::after {
+        right: 25%;
+        bottom: -15px;
+    }
+
+    .home.section .row {
+        flex-direction: column-reverse;
+    }
+
+    .service .service-item,
+    .portfolio .portfolio-item,
+    .contact .contact-info-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .section {
+        padding: 0 20px;
+    }
+
+    /* .section-title h2 {
+        text-align: center;
+    } */
+    /* 
+    .section-title h2::before,
+    .section-title h2::after {
+        left: 45%;
+    } */
+}
+
+/* === 767px and below (Mobile Landscape) === */
+@media (max-width: 767px) {
 
     .about .about-content .personal-info,
     .about .about-content .skills,
@@ -1015,25 +1047,19 @@ h3 .my-profession {
         max-width: 100%;
     }
 
-    .main-content {
-        padding: 1rem;
-    }
-
 
     .aside.open {
-        width: 380px;
+        width: 320px;
     }
 
     .aside .nav-toggler {
         right: 10px;
         top: 10px;
     }
-
 }
 
-
-
-@media (max-width:640px) {
+/* === 640px and below (Mobile Portrait) === */
+@media (max-width: 640px) {
     .about .about-content .personal-info .info-item {
         flex: 0 0 100%;
         max-width: 100%;
@@ -1044,12 +1070,26 @@ h3 .my-profession {
     }
 
     .aside.open {
-        width: 280px;
-
+        width: 260px;
     }
 
     .aside .nav-toggler {
-        right: 20px;
+        right: 15px;
         top: 15px;
+    }
+
+
+    .home .home-img::before {
+        left: -15px;
+        top: -15px;
+    }
+
+    .home .home-img::after {
+        right: -15px;
+        bottom: -15px;
+    }
+
+    .about .about-content .personal-info .info-item p span {
+        margin-left: 0;
     }
 }
