@@ -100,7 +100,7 @@ const Sidebar = () => {
                     <a className='social_icon' href='https://github.com/Tausif148/' target="_blank" rel="noopener noreferrer">
                         <i className='fa-brands fa-github'></i>
                     </a>
-                    <a className='social_icon' href='https://wa.me/8793194591' target="_blank" rel="noopener noreferrer">
+                    <a className='social_icon' href='https://wa.me/+918793194591' target="_blank" rel="noopener noreferrer">
                         <i className='fa-brands fa-whatsapp'></i>
                     </a>
                 </div>
