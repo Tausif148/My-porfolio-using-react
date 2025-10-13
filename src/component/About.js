@@ -139,6 +139,13 @@ const About = () => {
                                                 <div className='skill-percent'>45%</div>
                                             </div>
                                         </div>
+                                                      <div className='skill-item padd-15'>
+                                            <h5>PHP</h5>
+                                            <div className='progress'>
+                                                <div className='progress-in' style={{ width: '40%' }}></div>
+                                                <div className='skill-percent'>40%</div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
