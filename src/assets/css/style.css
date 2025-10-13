@@ -39,8 +39,6 @@ ul {
 }
 
 
-
-
 .hidden {
     display: none !important;
 }
@@ -462,8 +460,6 @@ h3 .my-profession {
     border-bottom: 1px solid var(--bg-black-50);
 }
 
-
-
 .about .about-content .personal-info .info-item p span {
     font-weight: 400;
     color: var(--text-black-700);
@@ -704,7 +700,6 @@ h3 .my-profession {
 
 
 /* ---------------------Portfolio ---------------------*/
-
 .portfolio .portfolio-heading {
     flex: 0 0 100%;
     max-width: 100%;
@@ -872,7 +867,6 @@ h3 .my-profession {
     font-size: 14px;
     transition: all 0.3s ease;
     color: var(--text-black-700);
-
 }
 
 
@@ -914,7 +908,6 @@ h3 .my-profession {
 
 
 /* ===================  RESPONSIVE ==================== */
-
 /* === 1450px and below === */
 @media (max-width: 1450px) {
     .container {
@@ -1043,15 +1036,6 @@ h3 .my-profession {
     .section {
         padding: 0 20px;
     }
-
-    /* .section-title h2 {
-        text-align: center;
-    } */
-    /* 
-    .section-title h2::before,
-    .section-title h2::after {
-        left: 45%;
-    } */
 }
 
 /* === 767px and below (Mobile Landscape) === */
