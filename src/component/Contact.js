@@ -2,18 +2,12 @@
 import '../assets/css/style.css'
 import '../assets/css/style-switcher.css'
 
-//  style switcher
+// style switcher
 import '../assets/css/skins/color-1.css'
 // import '../assets/css/skins/color-2.css'
 // import '../assets/css/skins/color-3.css'
 // import '../assets/css/skins/color-4.css'
 // import '../assets/css/skins/color-5.css'
-
-
-
-// js
-import '../assets/js/script'
-
 
 
 const Contact
@@ -80,4 +74,4 @@ const Contact
     }
 
 
-export default Contact;    
+export default Contact;

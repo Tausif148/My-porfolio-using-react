@@ -6,7 +6,6 @@ import '../assets/css/skins/color-1.css';
 // import '../assets/css/skins/color-3.css';
 // import '../assets/css/skins/color-4.css';
 // import '../assets/css/skins/color-5.css';
-// import '../assets/js/script';
 
 // Basic projects
 import calculator from '../assets/img/Projects_basic/calculator.png';

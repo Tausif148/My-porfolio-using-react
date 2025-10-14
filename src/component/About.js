@@ -10,10 +10,6 @@ import '../assets/css/skins/color-1.css'
 // import '../assets/css/skins/color-5.css'
 
 
-// js
-import '../assets/js/script'
-
-
 const About = () => {
     return (
         <section className="about section" id="about">
