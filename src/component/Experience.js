@@ -20,7 +20,6 @@ const Experience = () => {
                     </div>
                     <div className='row'>
                         <div className="about-content padd-15">
-
                             <div className='row'>
                                 <div className='experience padd-15'>
                                     <h3 className='title'>Experience</h3>
@@ -109,16 +108,12 @@ const Experience = () => {
 
                                     </div>
                                 </div>
-
-
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
     )
 }
 

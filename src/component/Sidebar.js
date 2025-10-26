@@ -86,7 +86,6 @@ const Sidebar = () => {
                     ))}
                 </ul>
 
-
                 <div className='socials'>
                     <a className='social_icon' href='https://www.instagram.com/sk.tausif_19' target="_blank" rel="noopener noreferrer">
                         <i className='fa-brands fa-instagram'></i>
@@ -101,7 +100,6 @@ const Sidebar = () => {
                         <i className='fa-brands fa-whatsapp'></i>
                     </a>
                 </div>
-
             </div>
         </div>
     )

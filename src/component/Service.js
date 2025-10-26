@@ -9,7 +9,6 @@ import '../assets/css/skins/color-1.css'
 // import '../assets/css/skins/color-4.css'
 // import '../assets/css/skins/color-5.css'
 
-
 const Service = () => {
     return (
         <section className='service section ' id="services">
@@ -94,12 +93,8 @@ const Service = () => {
                     {/* ========Service item end ========*/}
                 </div>
             </div>
-
         </section>
-
     )
-
 }
-
 
 export default Service;                                                         

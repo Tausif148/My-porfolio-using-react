@@ -38,7 +38,6 @@ const phpProjects = allProjects.slice(6, 7);
 
 const Tabs = ({ tabsList, children }) => {
     const [activeTab, setActiveTab] = useState(0);
-
     return (
         <div className="tabs-container padd-15" style={{ width: '100%' }}>
             <div className="tabs-header" style={{ display: 'flex', gap: '10px', marginBottom: '20px', flexDirection: 'row', overflowX: 'auto', overflowY: 'hidden', WebkitOverflowScrolling: 'touch', padding: '1rem 0', border: 'none', scrollSnapType: 'x mandatory' }}>

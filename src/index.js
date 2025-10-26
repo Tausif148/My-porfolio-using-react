@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
@@ -6,15 +5,12 @@ import ReactDOM from 'react-dom/client';
 import './assets/css/style.css'
 import './assets/css/style-switcher.css'
 
-
 //  style switcher
 import './assets/css/skins/color-1.css'
 // import './assets/css/skins/color-2.css'
 // import './assets/css/skins/color-3.css'
 // import './assets/css/skins/color-4.css'
 // import './assets/css/skins/color-5.css'
-
-
 
 //importing component
 import Sidebar from './component/Sidebar'
@@ -24,9 +20,6 @@ import Experience from './component/Experience';
 // import Service from './component/Service';
 import Portfolio from './component/Portfolio';
 import Contact from './component/Contact';
-
-
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

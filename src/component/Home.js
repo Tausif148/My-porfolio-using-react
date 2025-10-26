@@ -9,10 +9,8 @@ import '../assets/css/skins/color-1.css'
 // import '../assets/css/skins/color-4.css'
 // import '../assets/css/skins/color-5.css'
 
-
 // importing images for home component
 import profile from '../assets/img/linkedin profile.jpg';
-
 
 export function Home() {
     return (
