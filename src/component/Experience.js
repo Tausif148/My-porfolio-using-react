@@ -10,10 +10,6 @@ import '../assets/css/skins/color-1.css'
 // import '../assets/css/skins/color-5.css'
 
 
-// js
-import '../assets/js/script'
-
-
 const Experience = () => {
     return (
         <section className="experience about section" id="experience">
@@ -26,7 +22,7 @@ const Experience = () => {
                         <div className="about-content padd-15">
 
                             <div className='row'>
-   <div className='experience padd-15'>
+                                <div className='experience padd-15'>
                                     <h3 className='title'>Experience</h3>
                                     <div className='row'>
                                         <div className='timeline-box padd-15'>
@@ -114,7 +110,7 @@ const Experience = () => {
                                     </div>
                                 </div>
 
-                             
+
 
                             </div>
                         </div>
