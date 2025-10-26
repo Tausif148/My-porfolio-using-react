@@ -33,7 +33,7 @@ const allProjects = [
 ];
 
 // Example: filter projects for each tab (customize as needed)
-const basicProjects = allProjects.slice(0, 4);
+const jsProjects = allProjects.slice(0, 4);
 const shopifyProjects = allProjects.slice(4, 6);
 const phpProjects = allProjects.slice(6, 7);
 
@@ -73,7 +73,7 @@ const Tabs = ({ tabsList, children }) => {
 };
 
 const Portfolio = () => {
-    const tabsList = ['All', 'Basic', 'Shopify Theme', 'PHP '];
+    const tabsList = ['All', 'Javascript', 'Shopify themes', 'PHP '];
 
     return (
         <section className="portfolio section" id="portfolio">
@@ -110,7 +110,7 @@ const Portfolio = () => {
                         </div>
                         {/* Tab 2: Basic Projects */}
                         <div className="portfolio-grid">
-                            {basicProjects.map((proj) => (
+                            {jsProjects.map((proj) => (
                                 <a
                                     key={proj.alt}
                                     href={proj.link}
