@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/My-porfolio-using-react/static/css/main.beab4eb9.css",
-    "main.js": "/My-porfolio-using-react/static/js/main.146c7f29.js",
+    "main.js": "/My-porfolio-using-react/static/js/main.2ee55b54.js",
     "static/media/sundrift_theme.png": "/My-porfolio-using-react/static/media/sundrift_theme.c61e0c955cacd88ac8df.png",
     "static/media/clear_theme.png": "/My-porfolio-using-react/static/media/clear_theme.225771fafd1ccd7009fc.png",
     "static/media/adorn_theme.png": "/My-porfolio-using-react/static/media/adorn_theme.943bb2c1c039a9525007.png",
@@ -14,10 +14,10 @@
     "static/media/currency_convertor.png": "/My-porfolio-using-react/static/media/currency_convertor.3ee5c5d27c0c77646fe3.png",
     "index.html": "/My-porfolio-using-react/index.html",
     "main.beab4eb9.css.map": "/My-porfolio-using-react/static/css/main.beab4eb9.css.map",
-    "main.146c7f29.js.map": "/My-porfolio-using-react/static/js/main.146c7f29.js.map"
+    "main.2ee55b54.js.map": "/My-porfolio-using-react/static/js/main.2ee55b54.js.map"
   },
   "entrypoints": [
     "static/css/main.beab4eb9.css",
-    "static/js/main.146c7f29.js"
+    "static/js/main.2ee55b54.js"
   ]
 }
