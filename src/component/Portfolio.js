@@ -14,27 +14,31 @@ import Digital_clock from '../assets/img/Projects_basic/digital_clock.png';
 import Weather_Web_App from '../assets/img/Projects_basic/weather_web_app.png';
 
 // Shopify projects
-import aroma from '../assets/img/Projects_shopify/Aroma.png';
-import petstore from '../assets/img/Projects_shopify/Pet_Store.png';
+import adorn from '../assets/img/Projects_shopify/adorn_theme.png';
+import flaunt from '../assets/img/Projects_shopify/flaunt_theme.png';
+import sundrift from '../assets/img/Projects_shopify/sundrift_theme.png';
+import clear from '../assets/img/Projects_shopify/clear_theme.png';
 
 // PHP projects
 import guestbook from '../assets/img/Projects_php/guestbook.png';
 
 // Add missing basic project images to allProjects
 const allProjects = [
+    { src: guestbook, alt: 'Guestbook', link: 'http://guestbook.infinityfreeapp.com/' },
     { src: calculator, alt: 'Calculator', link: 'https://tausif148.github.io/My-calculator/' },
     { src: currency_convertor, alt: 'Currency Convertor', link: 'https://tausif148.github.io/My-currency-convertor/' },
     { src: Digital_clock, alt: 'Digital Clock', link: 'https://tausif148.github.io/My-digital-clock/' },
     { src: Weather_Web_App, alt: 'Weather Web App', link: 'https://tausif148.github.io/My-weather-app/' },
-    { src: aroma, alt: 'Aroma', link: 'https://aroma-demo.myshopify.com/' },
-    { src: petstore, alt: 'Pet Store', link: 'https://heavnn.myshopify.com/' },
-    { src: guestbook, alt: 'Guestbook', link: 'http://guestbook.infinityfreeapp.com/' }
+    { src: adorn, alt: 'Adorn', link: 'https://themes.shopify.com/themes/adorn' },
+    { src: flaunt, alt: 'Flaunt', link: 'https://themes.shopify.com/themes/flaunt/presets/flaunt' },
+    { src: sundrift, alt: 'Sundrift', link: 'https://themes.shopify.com/themes/flaunt/presets/sundrift' },
+    { src: clear, alt: 'Clear', link: 'https://themes.shopify.com/themes/flaunt/presets/clear' },
 ];
 
 // Example: filter projects for each tab (customize as needed)
-const jsProjects = allProjects.slice(0, 4);
-const shopifyProjects = allProjects.slice(4, 6);
-const phpProjects = allProjects.slice(6, 7);
+const phpProjects = allProjects.slice(0, 1);
+const jsProjects = allProjects.slice(1, 5);
+const shopifyProjects = allProjects.slice(5, 10);
 
 const Tabs = ({ tabsList, children }) => {
     const [activeTab, setActiveTab] = useState(0);
@@ -71,7 +75,7 @@ const Tabs = ({ tabsList, children }) => {
 };
 
 const Portfolio = () => {
-    const tabsList = ['All', 'Javascript', 'Shopify themes', 'PHP '];
+    const tabsList = ['All', 'Javascript', 'PHP ', 'Shopify themes'];
 
     return (
         <section className="portfolio section" id="portfolio">
@@ -124,25 +128,7 @@ const Portfolio = () => {
                                 </a>
                             ))}
                         </div>
-                        {/* Tab 3: Shopify Theme Projects */}
-                        <div className="portfolio-grid">
-                            {shopifyProjects.map((proj) => (
-                                <a
-                                    key={proj.alt}
-                                    href={proj.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="portfolio-item"
-                                >
-                                    <div className="portfolio-item-inner shadow-dark">
-                                        <div className="portfolio-img">
-                                            <img src={proj.src} alt={proj.alt} />
-                                        </div>
-                                    </div>
-                                </a>
-                            ))}
-                        </div>
-                        {/* Tab 4: php Projects */}
+                        {/* Tab 3: php Projects */}
                         <div className="portfolio-grid">
                             {phpProjects.length === 0 ? (
                                 <p>No PHP projects available.</p>
@@ -164,6 +150,25 @@ const Portfolio = () => {
                                 ))
                             )}
                         </div>
+                        {/* Tab 4: Shopify Theme Projects */}
+                        <div className="portfolio-grid">
+                            {shopifyProjects.map((proj) => (
+                                <a
+                                    key={proj.alt}
+                                    href={proj.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="portfolio-item"
+                                >
+                                    <div className="portfolio-item-inner shadow-dark">
+                                        <div className="portfolio-img">
+                                            <img src={proj.src} alt={proj.alt} />
+                                        </div>
+                                    </div>
+                                </a>
+                            ))}
+                        </div>
+
                     </Tabs>
                 </div>
             </div>

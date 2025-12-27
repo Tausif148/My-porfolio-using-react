@@ -743,7 +743,7 @@ h3 .my-profession {
     display: block;
     border-radius: 8px;
     max-width: 100%;
-    height: 185px;
+    height: 100%;
     object-fit: cover;
 }
 
