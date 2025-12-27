@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/My-porfolio-using-react/static/css/main.f04efec5.css",
-    "main.js": "/My-porfolio-using-react/static/js/main.1ac1cd88.js",
-    "static/media/Pet_Store.png": "/My-porfolio-using-react/static/media/Pet_Store.b5bc9b914402efbc2202.png",
-    "static/media/Aroma.png": "/My-porfolio-using-react/static/media/Aroma.0e6a0090ce8ef0625a5a.png",
-    "static/media/weather_web_app.png": "/My-porfolio-using-react/static/media/weather_web_app.678fb1693a00556033dd.png",
-    "static/media/digital_clock.png": "/My-porfolio-using-react/static/media/digital_clock.4f20ecae94b191cf5f46.png",
+    "main.css": "/My-porfolio-using-react/static/css/main.beab4eb9.css",
+    "main.js": "/My-porfolio-using-react/static/js/main.146c7f29.js",
+    "static/media/sundrift_theme.png": "/My-porfolio-using-react/static/media/sundrift_theme.c61e0c955cacd88ac8df.png",
+    "static/media/clear_theme.png": "/My-porfolio-using-react/static/media/clear_theme.225771fafd1ccd7009fc.png",
+    "static/media/adorn_theme.png": "/My-porfolio-using-react/static/media/adorn_theme.943bb2c1c039a9525007.png",
+    "static/media/flaunt_theme.png": "/My-porfolio-using-react/static/media/flaunt_theme.93dc9d5c2eb22d7c5aac.png",
+    "static/media/weather_web_app.png": "/My-porfolio-using-react/static/media/weather_web_app.31c86a1ac213743d1c81.png",
+    "static/media/digital_clock.png": "/My-porfolio-using-react/static/media/digital_clock.42a91a6fad79c13b37ed.png",
     "static/media/linkedin profile.jpg": "/My-porfolio-using-react/static/media/linkedin profile.7a49f061a6ca8d12e1e2.jpg",
-    "static/media/calculator.png": "/My-porfolio-using-react/static/media/calculator.ceb8785eb2384ff1e86e.png",
-    "static/media/guestbook.png": "/My-porfolio-using-react/static/media/guestbook.2d5f1e08433ebf45978a.png",
-    "static/media/currency_convertor.png": "/My-porfolio-using-react/static/media/currency_convertor.cff6b189369b0d148a47.png",
+    "static/media/calculator.png": "/My-porfolio-using-react/static/media/calculator.54ddc8ec4aec7800da7c.png",
+    "static/media/guestbook.png": "/My-porfolio-using-react/static/media/guestbook.02513f0e10f5f8a51e23.png",
+    "static/media/currency_convertor.png": "/My-porfolio-using-react/static/media/currency_convertor.3ee5c5d27c0c77646fe3.png",
     "index.html": "/My-porfolio-using-react/index.html",
-    "main.f04efec5.css.map": "/My-porfolio-using-react/static/css/main.f04efec5.css.map",
-    "main.1ac1cd88.js.map": "/My-porfolio-using-react/static/js/main.1ac1cd88.js.map"
+    "main.beab4eb9.css.map": "/My-porfolio-using-react/static/css/main.beab4eb9.css.map",
+    "main.146c7f29.js.map": "/My-porfolio-using-react/static/js/main.146c7f29.js.map"
   },
   "entrypoints": [
-    "static/css/main.f04efec5.css",
-    "static/js/main.1ac1cd88.js"
+    "static/css/main.beab4eb9.css",
+    "static/js/main.146c7f29.js"
   ]
 }
