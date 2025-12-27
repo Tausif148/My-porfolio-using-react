@@ -91,7 +91,7 @@ const About = () => {
                                     </div>
                                     <div className='row'>
                                         <div className='buttons'>
-                                            <a href='https://drive.google.com/file/d/1lmjMHnpC4ehk354VLg_YIc4w5Y_hg7Am/view?usp=drive_link' rel='noopener noreferrer' target='_blank' className='btn'>Download CV</a>
+                                            <a href='https://drive.google.com/file/d/143Pnr79N4x2SMKODEcRxRQB6LePDt9Pf/view?usp=drive_link' rel='noopener noreferrer' target='_blank' className='btn'>Download CV</a>
                                             <a href='#contact' className='btn hire-me'>Hire Me</a>
                                         </div>
                                     </div>
