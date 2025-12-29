@@ -10,7 +10,7 @@ import '../assets/css/skins/color-1.css'
 // import '../assets/css/skins/color-5.css'
 
 // importing images for home component
-import profile from '../assets/img/linkedin profile.jpg';
+import profile from '../assets/img/tausif-profile.png';
 
 export function Home() {
     return (
