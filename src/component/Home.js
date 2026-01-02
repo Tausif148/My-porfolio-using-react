@@ -1,4 +1,3 @@
-// importing images for home component
 import profile from '../assets/img/tausif-profile.png';
 
 export function Home() {

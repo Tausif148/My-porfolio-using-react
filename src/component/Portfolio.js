@@ -15,7 +15,6 @@ import clear from '../assets/img/Projects_shopify/clear_theme.png';
 // PHP projects
 import guestbook from '../assets/img/Projects_php/guestbook.png';
 
-// Add missing basic project images to allProjects
 const allProjects = [
     { src: guestbook, alt: 'Guestbook', link: 'http://guestbook.infinityfreeapp.com/' },
     { src: calculator, alt: 'Calculator', link: 'https://tausif148.github.io/My-calculator/' },
