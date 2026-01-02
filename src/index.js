@@ -20,6 +20,7 @@ import Experience from './component/Experience';
 // import Service from './component/Service';
 import Portfolio from './component/Portfolio';
 import Contact from './component/Contact';
+import Cursor from './component/Cursor';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -35,6 +36,7 @@ root.render(
         <Portfolio />
         <Contact />
         {/* <Style_Switcher /> */}
+        <Cursor />
       </div>
 
     </div>

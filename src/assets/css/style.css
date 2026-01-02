@@ -907,6 +907,71 @@ h3 .my-profession {
 }
 
 
+/*=================== CURSOR POINTER ===================*/
+.cursor_pointer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: .7rem;
+    height: .7rem;
+    font-size: 0;
+    z-index: 9999999999;
+    pointer-events: none;
+    border-radius: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) translateZ(0);
+    backface-visibility: hidden;
+    transition: top 0.15s, left 0.15s, width 0.3s, height 0.3s, opacity 0.3s,
+        background 0.3s, visibility 0.3s;
+    background: var(--skin-color);
+}
+
+.grow {
+    width: 4rem;
+    height: 4rem;
+    top: -2rem;
+    left: -2rem;
+    opacity: 0.5;
+}
+
+.cursor_pointer.close,
+.cursor_pointer.swipe {
+    width: 5rem;
+    height: 5rem;
+    top: -3rem;
+    left: -3rem;
+    cursor: none;
+}
+
+.cursor_pointer.swipe {
+    opacity: 0.5;
+}
+
+.cursor_pointer.close:after {
+    content: "CLOSE";
+    font-size: 1.6rem;
+    line-height: 1;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: var(--color-foreground);
+    transform: translate(-50%, -50%);
+}
+
+.cursor_pointer.swipe:after {
+    content: "SWIPE";
+    font-size: 1.6rem;
+    line-height: 1;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: var(--color-foreground);
+    transform: translate(-50%, -50%);
+}
+
+
 /* ===================  RESPONSIVE ==================== */
 /* === 1450px and below === */
 @media (max-width: 1450px) {

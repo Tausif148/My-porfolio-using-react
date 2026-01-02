@@ -10,11 +10,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <title>Tausif Portfolio</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.0.23/bundled/lenis.min.css" />
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
   </head>
 
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
+
+  <script>
+
+    window.lenis = new Lenis();
+
+    function raf(time) {
+      window.lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+
+
+  </script>
 
 </html>

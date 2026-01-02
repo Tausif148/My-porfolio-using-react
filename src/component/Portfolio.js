@@ -1,11 +1,4 @@
 import React, { useState } from 'react';
-import '../assets/css/style.css';
-import '../assets/css/style-switcher.css';
-import '../assets/css/skins/color-1.css';
-// import '../assets/css/skins/color-2.css';
-// import '../assets/css/skins/color-3.css';
-// import '../assets/css/skins/color-4.css';
-// import '../assets/css/skins/color-5.css';
 
 // Basic projects
 import calculator from '../assets/img/Projects_basic/calculator.png';
