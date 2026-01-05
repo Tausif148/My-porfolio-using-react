@@ -11,6 +11,8 @@ import adorn from '../assets/img/Projects_shopify/adorn_theme.png';
 import flaunt from '../assets/img/Projects_shopify/flaunt_theme.png';
 import sundrift from '../assets/img/Projects_shopify/sundrift_theme.png';
 import clear from '../assets/img/Projects_shopify/clear_theme.png';
+import polish from '../assets/img/Projects_shopify/polish_theme.png';
+import advance from '../assets/img/Projects_shopify/advance_theme.png';
 
 // PHP projects
 import guestbook from '../assets/img/Projects_php/guestbook.png';
@@ -25,12 +27,14 @@ const allProjects = [
     { src: flaunt, alt: 'Flaunt', link: 'https://themes.shopify.com/themes/flaunt/presets/flaunt' },
     { src: sundrift, alt: 'Sundrift', link: 'https://themes.shopify.com/themes/flaunt/presets/sundrift' },
     { src: clear, alt: 'Clear', link: 'https://themes.shopify.com/themes/flaunt/presets/clear' },
+    // { src: polish, alt: 'Polish', link: 'https://themes.shopify.com/themes/flaunt/presets/polish' },
+    // { src: advance, alt: 'Advance', link: 'https://themes.shopify.com/themes/advance/presets/advance' },
 ];
 
 // Example: filter projects for each tab (customize as needed)
 const phpProjects = allProjects.slice(0, 1);
 const jsProjects = allProjects.slice(1, 5);
-const shopifyProjects = allProjects.slice(5, 10);
+const shopifyProjects = allProjects.slice(5, 15);
 
 const Tabs = ({ tabsList, children }) => {
     const [activeTab, setActiveTab] = useState(0);
@@ -162,6 +166,8 @@ const Portfolio = () => {
                         </div>
 
                     </Tabs>
+
+                    <a className='btn ' href="https://docs.google.com/spreadsheets/d/1_V7wMu4j5fY0riTIkabUcHtlMKwXlG7FGxmKpNXPIaQ/edit?usp=sharing" target="_blank" rel="noopener noreferrer">See all</a>
                 </div>
             </div>
         </section>

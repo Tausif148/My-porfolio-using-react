@@ -771,13 +771,19 @@ h3 .my-profession {
 }
 
 .tab-btn.active {
-    background: #ec1839;
+    background: var(--skin-color);
     color: #fff;
 }
 
 .tabs-content {
     padding: 15px 0;
 }
+
+.portfolio .row {
+    justify-content: center;
+}
+
+
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
@@ -907,69 +913,6 @@ h3 .my-profession {
 }
 
 
-/*=================== CURSOR POINTER ===================*/
-.cursor_pointer {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: .7rem;
-    height: .7rem;
-    font-size: 0;
-    z-index: 9999999999;
-    pointer-events: none;
-    border-radius: 50%;
-    opacity: 1;
-    transform: translate(-50%, -50%) translateZ(0);
-    backface-visibility: hidden;
-    transition: top 0.15s, left 0.15s, width 0.3s, height 0.3s, opacity 0.3s,
-        background 0.3s, visibility 0.3s;
-    background: var(--skin-color);
-}
-
-.grow {
-    width: 4rem;
-    height: 4rem;
-    top: -2rem;
-    left: -2rem;
-    opacity: 0.5;
-}
-
-.cursor_pointer.close,
-.cursor_pointer.swipe {
-    width: 5rem;
-    height: 5rem;
-    top: -3rem;
-    left: -3rem;
-    cursor: none;
-}
-
-.cursor_pointer.swipe {
-    opacity: 0.5;
-}
-
-.cursor_pointer.close:after {
-    content: "CLOSE";
-    font-size: 1.6rem;
-    line-height: 1;
-    font-weight: 600;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: var(--color-foreground);
-    transform: translate(-50%, -50%);
-}
-
-.cursor_pointer.swipe:after {
-    content: "SWIPE";
-    font-size: 1.6rem;
-    line-height: 1;
-    font-weight: 600;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: var(--color-foreground);
-    transform: translate(-50%, -50%);
-}
 
 
 /* ===================  RESPONSIVE ==================== */
@@ -1163,4 +1106,168 @@ h3 .my-profession {
     .about .about-content .personal-info .info-item p span {
         margin-left: 0;
     }
+}
+
+
+
+/*=================== CURSOR POINTER ===================*/
+.cursor_pointer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: .7rem;
+    height: .7rem;
+    font-size: 0;
+    z-index: 9999999999;
+    pointer-events: none;
+    border-radius: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) translateZ(0);
+    backface-visibility: hidden;
+    transition: top 0.15s, left 0.15s, width 0.3s, height 0.3s, opacity 0.3s,
+        background 0.3s, visibility 0.3s;
+    background: var(--skin-color);
+}
+
+.grow {
+    width: 4rem;
+    height: 4rem;
+    top: -2rem;
+    left: -2rem;
+    opacity: 0.5;
+}
+
+.cursor_pointer.close,
+.cursor_pointer.swipe {
+    width: 5rem;
+    height: 5rem;
+    top: -3rem;
+    left: -3rem;
+    cursor: none;
+}
+
+.cursor_pointer.swipe {
+    opacity: 0.5;
+}
+
+.cursor_pointer.close:after {
+    content: "CLOSE";
+    font-size: 1.6rem;
+    line-height: 1;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: var(--color-foreground);
+    transform: translate(-50%, -50%);
+}
+
+.cursor_pointer.swipe:after {
+    content: "SWIPE";
+    font-size: 1.6rem;
+    line-height: 1;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: var(--color-foreground);
+    transform: translate(-50%, -50%);
+}
+
+
+/*=========================== BACK TO TOP  ===========================*/
+
+button.back-to-top {
+    margin: 0;
+    padding: 0;
+    background-color: var(--skin-color);
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    color: transparent;
+    clear: both;
+    visibility: hidden;
+    position: fixed;
+    cursor: pointer;
+    display: block;
+    border: none;
+    right: 50px;
+    bottom: 75px;
+    font-size: 0;
+    outline: 0;
+    z-index: 99;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+button.back-to-top:hover,
+button.back-to-top:active,
+button.back-to-top:focus {
+    outline: 0;
+}
+
+button.back-to-top::before,
+button.back-to-top::after {
+    content: "";
+    display: block;
+    border-bottom: solid 10px white;
+    border-left: solid 10px transparent;
+    line-height: 0;
+    border-right: solid 10px transparent;
+    height: 0;
+    margin: 18px auto 0;
+    width: 0;
+    border-radius: 20px;
+    visibility: hidden;
+}
+
+button.back-to-top::after {
+    border-bottom-color: var(--skin-color);
+    position: relative;
+    top: -24px;
+}
+
+button.back-to-top.show {
+    display: block;
+    background-color: var(--skin-color);
+    font-size: 25px;
+    right: 25px;
+    bottom: 50px;
+    height: 50px;
+    width: 50px;
+    visibility: visible;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+
+
+button.back-to-top.show::after,
+button.back-to-top.show::before {
+    visibility: visible;
+}
+
+button.back-to-top.show:focus-visible {
+    background: #000000;
+    outline: 3px solid white;
+    outline-offset: 3px;
+}
+
+button.back-to-top.show:focus-visible::after {
+    background: #000000;
+}
+
+button.back-to-top.show:focus-visible::before {
+    background: white;
+}
+
+button.back-to-top.show:active {
+    box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
 }

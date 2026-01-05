@@ -21,6 +21,7 @@ import Experience from './component/Experience';
 import Portfolio from './component/Portfolio';
 import Contact from './component/Contact';
 import Cursor from './component/Cursor';
+import BackToTop from './component/BackToTop';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -37,6 +38,7 @@ root.render(
         <Contact />
         {/* <Style_Switcher /> */}
         <Cursor />
+        <BackToTop />
       </div>
 
     </div>
