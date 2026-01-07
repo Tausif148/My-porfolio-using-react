@@ -1174,6 +1174,12 @@ h3 .my-profession {
     transform: translate(-50%, -50%);
 }
 
+@media(max-width:640px) {
+    .cursor_pointer {
+        display: none;
+    }
+}
+
 
 /*=========================== BACK TO TOP  ===========================*/
 
