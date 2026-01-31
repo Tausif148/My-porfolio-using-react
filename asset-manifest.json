@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/My-porfolio-using-react/static/css/main.d562f382.css",
-    "main.js": "/My-porfolio-using-react/static/js/main.b897aa2d.js",
+    "main.js": "/My-porfolio-using-react/static/js/main.7acd58b0.js",
     "static/media/sundrift_theme.png": "/My-porfolio-using-react/static/media/sundrift_theme.c61e0c955cacd88ac8df.png",
     "static/media/clear_theme.png": "/My-porfolio-using-react/static/media/clear_theme.225771fafd1ccd7009fc.png",
     "static/media/polish_theme.png": "/My-porfolio-using-react/static/media/polish_theme.0f64cb222e367d70f28d.png",
@@ -16,10 +16,10 @@
     "static/media/currency_convertor.png": "/My-porfolio-using-react/static/media/currency_convertor.3ee5c5d27c0c77646fe3.png",
     "index.html": "/My-porfolio-using-react/index.html",
     "main.d562f382.css.map": "/My-porfolio-using-react/static/css/main.d562f382.css.map",
-    "main.b897aa2d.js.map": "/My-porfolio-using-react/static/js/main.b897aa2d.js.map"
+    "main.7acd58b0.js.map": "/My-porfolio-using-react/static/js/main.7acd58b0.js.map"
   },
   "entrypoints": [
     "static/css/main.d562f382.css",
-    "static/js/main.b897aa2d.js"
+    "static/js/main.7acd58b0.js"
   ]
 }
