@@ -27,8 +27,8 @@ const allProjects = [
     { src: flaunt, alt: 'Flaunt', link: 'https://themes.shopify.com/themes/flaunt/presets/flaunt' },
     { src: sundrift, alt: 'Sundrift', link: 'https://themes.shopify.com/themes/flaunt/presets/sundrift' },
     { src: clear, alt: 'Clear', link: 'https://themes.shopify.com/themes/flaunt/presets/clear' },
-    // { src: polish, alt: 'Polish', link: 'https://themes.shopify.com/themes/flaunt/presets/polish' },
-    // { src: advance, alt: 'Advance', link: 'https://themes.shopify.com/themes/advance/presets/advance' },
+    { src: polish, alt: 'Polish', link: 'https://themes.shopify.com/themes/flaunt/presets/polish' },
+    { src: advance, alt: 'Advance', link: 'https://themes.shopify.com/themes/flaunt/presets/advance' },
 ];
 
 // Example: filter projects for each tab (customize as needed)
