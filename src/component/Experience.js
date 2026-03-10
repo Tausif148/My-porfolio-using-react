@@ -16,10 +16,33 @@ const Experience = () => {
                                             <div className='timeline shadow-dark'>
 
                                                 {/* ========timeline item ========*/}
+                                                {/* <div className='timeline-item'>
+                                                    <div className='cicle-dot'></div>
+                                                    <h3 className='timeline-date'>
+                                                        <i className='fa-solid fa-calendar-days'></i>April 2026 —  Present
+                                                    </h3>
+                                                    <h4 className='timeline-title'>Software Developer — Stepone Technology, Nagpur</h4>
+
+                                                    <p className='timeline-text'>
+                                                        Working as a Software Developer focused on building scalable web applications using modern technologies such as React, Python, and MongoDB.
+                                                        Responsible for developing responsive user interfaces, integrating APIs, and implementing efficient backend logic.
+                                                    </p>
+
+                                                    <p className='timeline-text' style={{ margin: '1rem 0' }}>
+                                                        Develop full-stack solutions using React for dynamic front-end applications and Python for backend services.
+                                                        Design and manage databases with MongoDB, build REST APIs, and ensure high performance, clean code practices,
+                                                        and maintainable architecture while collaborating with cross-functional teams.
+                                                    </p>
+                                                </div> */}
+
+                                                {/* ========timeline item ========*/}
                                                 <div className='timeline-item'>
                                                     <div className='cicle-dot'></div>
                                                     <h3 className='timeline-date'>
-                                                        <i className='fa-solid fa-calendar-days'></i>2022 - Present
+                                                        <i className='fa-solid fa-calendar-days'></i>
+                                                        Oct 2023 — Present
+                                                        {/* <span className="exp-duration">• 2 years 7 months</span> */}
+
                                                     </h3>
                                                     <h4 className='timeline-title'>Frontend & Shopify Developer — Vowel Web, Nagpur</h4>
                                                     <p className='timeline-text'>
@@ -34,7 +57,8 @@ const Experience = () => {
                                                 <div className='timeline-item'>
                                                     <div className='cicle-dot'></div>
                                                     <h3 className='timeline-date'>
-                                                        <i className='fa-solid fa-calendar-days'></i>2021 - 2022
+                                                        <i className='fa-solid fa-calendar-days'></i>Dec 2022 —  May 2023
+                                                        <span className="exp-duration">• 6 months</span>
                                                     </h3>
                                                     <h4 className='timeline-title'>Web Developer Trainee — Codeosity</h4>
                                                     <p className='timeline-text'>

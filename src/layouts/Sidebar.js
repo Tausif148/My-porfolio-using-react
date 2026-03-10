@@ -1,15 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
-const sections = [
-    { id: 'home', icon: 'fa-home', label: 'Home' },
-    { id: 'about', icon: 'fa-user', label: 'About' },
-    { id: 'experience', icon: 'fa-laptop-code', label: 'Experience' },
-    // { id: 'services', icon: 'fa-list', label: 'Services' },
-    { id: 'portfolio', icon: 'fa-briefcase', label: 'Portfolio' },
-    { id: 'contact', icon: 'fa-comments', label: 'Contact' },
-];
+const Sidebar = ({ sections }) => {
 
-const Sidebar = () => {
     const [activeSection, setActiveSection] = useState('home');
 
     // Function to handle the toggle click
@@ -53,7 +46,9 @@ const Sidebar = () => {
         <div>
             <div className="aside">
                 <div className='logo'>
-                    <a href='#home'><span>T</span>ausif</a>
+
+                    <Link to="/My-porfolio-using-react/" ><span>T</span>ausif</Link>
+                    {/* <a href='#home'><span>T</span>ausif</a> */}
                 </div>
 
                 <div className='nav-toggler' onClick={handleToggleClick}>
@@ -61,14 +56,14 @@ const Sidebar = () => {
                 </div>
 
                 <ul className='nav'>
-                    {sections.map(sec => (
+                    {sections.map((sec) => (
                         <li key={sec.id}>
                             <a
                                 href={`#${sec.id}`}
                                 className={activeSection === sec.id ? 'active' : ''}
-                                onClick={e => handleNavClick(e, sec.id)}
+                                onClick={(e) => handleNavClick(e, sec.id)}
                             >
-                                <i className={`fa ${sec.icon}`}></i>{sec.label}
+                                <i className={`fa ${sec.icon}`}></i> {sec.label}
                             </a>
                         </li>
                     ))}

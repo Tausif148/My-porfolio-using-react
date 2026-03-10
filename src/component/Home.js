@@ -1,6 +1,6 @@
 import profile from '../assets/img/tausif-profile.png';
 
-export function Home() {
+export default function Home() {
     return (
         <section className="home section " id="home">
             <div className='container'>

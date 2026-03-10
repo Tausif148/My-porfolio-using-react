@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 // Basic projects
 import calculator from '../assets/img/Projects_basic/calculator.png';
@@ -13,6 +14,7 @@ import sundrift from '../assets/img/Projects_shopify/sundrift_theme.png';
 import clear from '../assets/img/Projects_shopify/clear_theme.png';
 import polish from '../assets/img/Projects_shopify/polish_theme.png';
 import advance from '../assets/img/Projects_shopify/advance_theme.png';
+import blocksy from '../assets/img/Projects_shopify/Blocksy.png';
 
 // PHP projects
 import guestbook from '../assets/img/Projects_php/guestbook.png';
@@ -29,12 +31,13 @@ const allProjects = [
     { src: clear, alt: 'Clear', link: 'https://themes.shopify.com/themes/flaunt/presets/clear' },
     { src: polish, alt: 'Polish', link: 'https://themes.shopify.com/themes/flaunt/presets/polish' },
     { src: advance, alt: 'Advance', link: 'https://themes.shopify.com/themes/flaunt/presets/advance' },
+    { src: blocksy, alt: 'blocksy', link: 'https://apps.shopify.com/blocksy-section-builder' },
 ];
 
 // Example: filter projects for each tab (customize as needed)
 const phpProjects = allProjects.slice(0, 1);
 const jsProjects = allProjects.slice(1, 5);
-const shopifyProjects = allProjects.slice(5, 15);
+const shopifyProjects = allProjects.slice(5, 20);
 
 const Tabs = ({ tabsList, children }) => {
     const [activeTab, setActiveTab] = useState(0);
@@ -71,7 +74,7 @@ const Tabs = ({ tabsList, children }) => {
 };
 
 const Portfolio = () => {
-    const tabsList = ['All', 'Javascript', 'PHP ', 'Shopify themes'];
+    const tabsList = ['All', 'Javascript', 'PHP ', 'Shopify'];
 
     return (
         <section className="portfolio section" id="portfolio">
@@ -167,7 +170,15 @@ const Portfolio = () => {
 
                     </Tabs>
 
-                    <a className='btn ' href="https://docs.google.com/spreadsheets/d/1_V7wMu4j5fY0riTIkabUcHtlMKwXlG7FGxmKpNXPIaQ/edit?usp=sharing" target="_blank" rel="noopener noreferrer">See all</a>
+                    <a className='btn' style={{ marginRight: '1rem' }} href="https://docs.google.com/spreadsheets/d/1_V7wMu4j5fY0riTIkabUcHtlMKwXlG7FGxmKpNXPIaQ/edit?usp=sharing" target="_blank" rel="noopener noreferrer">See all</a>
+
+                    <Link
+                        to="/My-porfolio-using-react/projects"
+                        className="text-blue-500 font-medium hover:underline btn"
+                    >
+                        View all
+                    </Link>
+
                 </div>
             </div>
         </section>
