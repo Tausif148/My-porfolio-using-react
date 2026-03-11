@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/My-porfolio-using-react/static/css/main.abada821.css",
-    "main.js": "/My-porfolio-using-react/static/js/main.8bb861e5.js",
+    "main.css": "/My-porfolio-using-react/static/css/main.2a890d47.css",
+    "main.js": "/My-porfolio-using-react/static/js/main.97fa6f3d.js",
     "static/media/sundrift_theme.png": "/My-porfolio-using-react/static/media/sundrift_theme.c61e0c955cacd88ac8df.png",
     "static/media/clear_theme.png": "/My-porfolio-using-react/static/media/clear_theme.225771fafd1ccd7009fc.png",
     "static/media/polish_theme.png": "/My-porfolio-using-react/static/media/polish_theme.0f64cb222e367d70f28d.png",
@@ -12,15 +12,16 @@
     "static/media/Blocksy.png": "/My-porfolio-using-react/static/media/Blocksy.cfc6a9a0ddab9485cee7.png",
     "static/media/weather_web_app.png": "/My-porfolio-using-react/static/media/weather_web_app.31c86a1ac213743d1c81.png",
     "static/media/digital_clock.png": "/My-porfolio-using-react/static/media/digital_clock.42a91a6fad79c13b37ed.png",
+    "static/media/loginsignup.png": "/My-porfolio-using-react/static/media/loginsignup.67711da41fec0ed43e70.png",
     "static/media/calculator.png": "/My-porfolio-using-react/static/media/calculator.54ddc8ec4aec7800da7c.png",
     "static/media/guestbook.png": "/My-porfolio-using-react/static/media/guestbook.02513f0e10f5f8a51e23.png",
     "static/media/currency_convertor.png": "/My-porfolio-using-react/static/media/currency_convertor.3ee5c5d27c0c77646fe3.png",
     "index.html": "/My-porfolio-using-react/index.html",
-    "main.abada821.css.map": "/My-porfolio-using-react/static/css/main.abada821.css.map",
-    "main.8bb861e5.js.map": "/My-porfolio-using-react/static/js/main.8bb861e5.js.map"
+    "main.2a890d47.css.map": "/My-porfolio-using-react/static/css/main.2a890d47.css.map",
+    "main.97fa6f3d.js.map": "/My-porfolio-using-react/static/js/main.97fa6f3d.js.map"
   },
   "entrypoints": [
-    "static/css/main.abada821.css",
-    "static/js/main.8bb861e5.js"
+    "static/css/main.2a890d47.css",
+    "static/js/main.97fa6f3d.js"
   ]
 }
