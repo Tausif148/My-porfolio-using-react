@@ -19,6 +19,10 @@ import blocksy from '../assets/img/Projects_shopify/Blocksy.png';
 // PHP projects
 import guestbook from '../assets/img/Projects_php/guestbook.png';
 
+// REACT project
+import loginsignup from '../assets/img/projectReact/loginsignup.png';
+
+
 const allProjects = [
     { src: guestbook, alt: 'Guestbook', link: 'http://guestbook.infinityfreeapp.com/' },
     { src: calculator, alt: 'Calculator', link: 'https://tausif148.github.io/My-calculator/' },
@@ -32,12 +36,14 @@ const allProjects = [
     { src: polish, alt: 'Polish', link: 'https://themes.shopify.com/themes/flaunt/presets/polish' },
     { src: advance, alt: 'Advance', link: 'https://themes.shopify.com/themes/flaunt/presets/advance' },
     { src: blocksy, alt: 'blocksy', link: 'https://apps.shopify.com/blocksy-section-builder' },
+    { src: loginsignup, alt: 'loginsignup', link: 'https://tausif148.github.io/Login-signup-react/' },
 ];
 
 // Example: filter projects for each tab (customize as needed)
 const phpProjects = allProjects.slice(0, 1);
 const jsProjects = allProjects.slice(1, 5);
-const shopifyProjects = allProjects.slice(5, 20);
+const shopifyProjects = allProjects.slice(5, 12);
+const reactProjects = allProjects.slice(12, 15);
 
 const Tabs = ({ tabsList, children }) => {
     const [activeTab, setActiveTab] = useState(0);
@@ -74,7 +80,7 @@ const Tabs = ({ tabsList, children }) => {
 };
 
 const Portfolio = () => {
-    const tabsList = ['All', 'Javascript', 'PHP ', 'Shopify'];
+    const tabsList = ['All', 'Javascript', 'PHP ', 'Shopify', 'React'];
 
     return (
         <section className="portfolio section" id="portfolio">
@@ -167,6 +173,26 @@ const Portfolio = () => {
                                 </a>
                             ))}
                         </div>
+
+                        {/* Tab 5: Shopify Theme Projects */}
+                        <div className="portfolio-grid">
+                            {reactProjects.map((proj) => (
+                                <a
+                                    key={proj.alt}
+                                    href={proj.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="portfolio-item"
+                                >
+                                    <div className="portfolio-item-inner shadow-dark">
+                                        <div className="portfolio-img">
+                                            <img src={proj.src} alt={proj.alt} />
+                                        </div>
+                                    </div>
+                                </a>
+                            ))}
+                        </div>
+
 
                     </Tabs>
 
