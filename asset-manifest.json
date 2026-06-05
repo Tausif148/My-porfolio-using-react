@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/My-porfolio-using-react/static/css/main.2a890d47.css",
-    "main.js": "/My-porfolio-using-react/static/js/main.dd2c1306.js",
+    "main.js": "/My-porfolio-using-react/static/js/main.d2a2ae0b.js",
     "static/media/sundrift_theme.png": "/My-porfolio-using-react/static/media/sundrift_theme.c61e0c955cacd88ac8df.png",
     "static/media/clear_theme.png": "/My-porfolio-using-react/static/media/clear_theme.225771fafd1ccd7009fc.png",
     "static/media/polish_theme.png": "/My-porfolio-using-react/static/media/polish_theme.0f64cb222e367d70f28d.png",
@@ -10,6 +10,7 @@
     "static/media/adorn_theme.png": "/My-porfolio-using-react/static/media/adorn_theme.943bb2c1c039a9525007.png",
     "static/media/flaunt_theme.png": "/My-porfolio-using-react/static/media/flaunt_theme.93dc9d5c2eb22d7c5aac.png",
     "static/media/Blocksy.png": "/My-porfolio-using-react/static/media/Blocksy.cfc6a9a0ddab9485cee7.png",
+    "static/media/employeeManagementSystem.png": "/My-porfolio-using-react/static/media/employeeManagementSystem.11dbaed173fbd68a5c31.png",
     "static/media/weather_web_app.png": "/My-porfolio-using-react/static/media/weather_web_app.31c86a1ac213743d1c81.png",
     "static/media/digital_clock.png": "/My-porfolio-using-react/static/media/digital_clock.42a91a6fad79c13b37ed.png",
     "static/media/loginsignup.png": "/My-porfolio-using-react/static/media/loginsignup.67711da41fec0ed43e70.png",
@@ -18,10 +19,10 @@
     "static/media/currency_convertor.png": "/My-porfolio-using-react/static/media/currency_convertor.3ee5c5d27c0c77646fe3.png",
     "index.html": "/My-porfolio-using-react/index.html",
     "main.2a890d47.css.map": "/My-porfolio-using-react/static/css/main.2a890d47.css.map",
-    "main.dd2c1306.js.map": "/My-porfolio-using-react/static/js/main.dd2c1306.js.map"
+    "main.d2a2ae0b.js.map": "/My-porfolio-using-react/static/js/main.d2a2ae0b.js.map"
   },
   "entrypoints": [
     "static/css/main.2a890d47.css",
-    "static/js/main.dd2c1306.js"
+    "static/js/main.d2a2ae0b.js"
   ]
 }
