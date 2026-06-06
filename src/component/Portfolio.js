@@ -83,7 +83,7 @@ const allProjects = [
   {
     src: loginsignup,
     alt: "loginsignup",
-    link: "https://tausif148.github.io/Login-signup-react/",
+    link: "https://tausif148.github.io/login-signup-react/",
   },
   {
     src: employeeManagementSystem,

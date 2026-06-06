@@ -15,6 +15,9 @@ import calculator from "../assets/img/Projects_basic/calculator.png";
 import currency_convertor from "../assets/img/Projects_basic/currency_convertor.png";
 import Digital_clock from "../assets/img/Projects_basic/digital_clock.png";
 import Weather_Web_App from "../assets/img/Projects_basic/weather_web_app.png";
+import loginsignup from "../assets/img/projectReact/loginsignup.png";
+import employeeManagementSystem from "../assets/img/projectReact/employeeManagementSystem.png";
+
 
 const vowelwebProjects = [
   { src: adorn, alt: "Adorn", link: "https://themes.shopify.com/themes/adorn" },
@@ -78,6 +81,16 @@ const personalProjects = [
     src: Weather_Web_App,
     alt: "Weather Web App",
     link: "https://tausif148.github.io/My-weather-app/",
+  },
+    {
+    src: loginsignup,
+    alt: "React login signup",
+    link: "https://tausif148.github.io/login-signup-react/",
+  },
+  {
+    src: employeeManagementSystem,
+    alt: "Employee Management System",
+    link: " https://tausif148.github.io/employee-management-system/",
   },
 ];
 
