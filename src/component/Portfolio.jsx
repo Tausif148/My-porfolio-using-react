@@ -128,10 +128,17 @@ const Tabs = ({ tabsList, children }) => {
               fontSize: "14px",
               borderRadius: "10px",
               border: "none",
-              background: activeTab === idx ? "#ec1839" : "#fdf9ff",
-              color: activeTab === idx ? "#fff" : "#302e4d",
+              background:
+                activeTab === idx
+                  ? "var(--skin-color)"
+                  : "var(--bg-black-100)",
+              color:
+                activeTab === idx
+                  ? "#fff"
+                  : "var(--text-black-900)",
               cursor: "pointer",
               fontWeight: 500,
+              transition: "all 0.3s ease",
             }}
             onClick={() => setActiveTab(idx)}
           >

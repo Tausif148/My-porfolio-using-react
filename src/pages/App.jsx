@@ -2,24 +2,20 @@
 import '../assets/css/style.css'
 import '../assets/css/style-switcher.css'
 
-//  style switcher
-import '../assets/css/skins/color-1.css'
-// import './assets/css/skins/color-2.css'
-// import './assets/css/skins/color-3.css'
-// import './assets/css/skins/color-4.css'
-// import './assets/css/skins/color-5.css'
+
+
 
 //importing component
 import Sidebar from '../layouts/Sidebar'
 import Home from '../component/Home';
 import About from '../component/About'
 import Experience from '../component/Experience';
-// import Service from './component/Service';
+// import Service from './component/Service';.
 import Portfolio from '../component/Portfolio';
 import Contact from '../component/Contact';
 import Cursor from '../component/Cursor';
 import BackToTop from '../component/BackToTop';
-
+import StyleSwitcher from '../component/StyleSwitcher';
 
 function App() {
     const sections = [
@@ -42,7 +38,7 @@ function App() {
                 {/* <Service /> */}
                 <Portfolio />
                 <Contact />
-                {/* <Style_Switcher /> */}
+                <StyleSwitcher />
                 <Cursor />
                 <BackToTop />
 
