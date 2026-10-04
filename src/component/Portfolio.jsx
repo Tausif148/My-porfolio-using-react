@@ -2,26 +2,28 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 // Basic projects
-import calculator from "../assets/img/Projects_basic/calculator.png";
-import currency_convertor from "../assets/img/Projects_basic/currency_convertor.png";
-import Digital_clock from "../assets/img/Projects_basic/digital_clock.png";
-import Weather_Web_App from "../assets/img/Projects_basic/weather_web_app.png";
+import calculator from "../assets/img/basicProjects/calculator.png";
+import currency_convertor from "../assets/img/basicProjects/currency_convertor.png";
+import Digital_clock from "../assets/img/basicProjects/digital_clock.png";
+import Weather_Web_App from "../assets/img/basicProjects/weather_web_app.png";
 
 // Shopify projects
-import adorn from "../assets/img/Projects_shopify/adorn_theme.png";
-import flaunt from "../assets/img/Projects_shopify/flaunt_theme.png";
-import sundrift from "../assets/img/Projects_shopify/sundrift_theme.png";
-import clear from "../assets/img/Projects_shopify/clear_theme.png";
-import polish from "../assets/img/Projects_shopify/polish_theme.png";
-import advance from "../assets/img/Projects_shopify/advance_theme.png";
-import blocksy from "../assets/img/Projects_shopify/Blocksy.png";
+import adorn from "../assets/img/shopifyProjects/adorn_theme.png";
+import flaunt from "../assets/img/shopifyProjects/flaunt_theme.png";
+import sundrift from "../assets/img/shopifyProjects/sundrift_theme.png";
+import clear from "../assets/img/shopifyProjects/clear_theme.png";
+import polish from "../assets/img/shopifyProjects/polish_theme.png";
+import advance from "../assets/img/shopifyProjects/advance_theme.png";
+import blocksy from "../assets/img/shopifyProjects/Blocksy.png";
 
 // PHP projects
-import guestbook from "../assets/img/Projects_php/guestbook.png";
+import guestbook from "../assets/img/phpProjects/guestbook.png";
 
 // REACT project
-import loginsignup from "../assets/img/projectReact/loginsignup.png";
-import employeeManagementSystem from "../assets/img/projectReact/employeeManagementSystem.png";
+import loginsignup from "../assets/img/reactProjects/loginsignup.png";
+import employeeManagementSystem from "../assets/img/reactProjects/employeeManagementSystem.png";
+import hospitalManagement from "../assets/img/reactProjects/hispitalManagement.png";
+import onlineRiceMill from "../assets/img/reactProjects/onlineRiceMill.png";
 
 const allProjects = [
   {
@@ -90,13 +92,23 @@ const allProjects = [
     alt: "employeeManagementSystem",
     link: " https://tausif148.github.io/employee-management-system/",
   },
+  {
+    src: onlineRiceMill,
+    alt: "Online Rice Mill",
+    link: "https://onlinericemill.in/",
+  },
+  {
+    src: hospitalManagement,
+    alt: "Central Care Hospital",
+    link: "https://centralcare.in/",
+  },
 ];
 
 // Example: filter projects for each tab (customize as needed)
 const phpProjects = allProjects.slice(0, 1);
 const jsProjects = allProjects.slice(1, 5);
 const shopifyProjects = allProjects.slice(5, 12);
-const reactProjects = allProjects.slice(12, 15);
+const reactProjects = allProjects.slice(12, 16);
 
 const Tabs = ({ tabsList, children }) => {
   const [activeTab, setActiveTab] = useState(0);
@@ -267,7 +279,7 @@ const Portfolio = () => {
               ))}
             </div>
           </Tabs>
-
+{/* 
           <a
             className="btn"
             style={{ marginRight: "1rem" }}
@@ -276,7 +288,7 @@ const Portfolio = () => {
             rel="noopener noreferrer"
           >
             See all
-          </a>
+          </a> */}
 
           <Link
             to="/My-porfolio-using-react/projects"

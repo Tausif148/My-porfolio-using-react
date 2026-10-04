@@ -1,22 +1,37 @@
 // vowelweb projects
-import adorn from "../assets/img/Projects_shopify/adorn_theme.png";
-import flaunt from "../assets/img/Projects_shopify/flaunt_theme.png";
-import sundrift from "../assets/img/Projects_shopify/sundrift_theme.png";
-import clear from "../assets/img/Projects_shopify/clear_theme.png";
-import polish from "../assets/img/Projects_shopify/polish_theme.png";
-import advance from "../assets/img/Projects_shopify/advance_theme.png";
-import blocksy from "../assets/img/Projects_shopify/Blocksy.png";
+import adorn from "../assets/img/shopifyProjects/adorn_theme.png";
+import flaunt from "../assets/img/shopifyProjects/flaunt_theme.png";
+import sundrift from "../assets/img/shopifyProjects/sundrift_theme.png";
+import clear from "../assets/img/shopifyProjects/clear_theme.png";
+import polish from "../assets/img/shopifyProjects/polish_theme.png";
+import advance from "../assets/img/shopifyProjects/advance_theme.png";
+import blocksy from "../assets/img/shopifyProjects/Blocksy.png";
 
 // Codeosity projects
-import guestbook from "../assets/img/Projects_php/guestbook.png";
+import guestbook from "../assets/img/phpProjects/guestbook.png";
 
 // My projects
-import calculator from "../assets/img/Projects_basic/calculator.png";
-import currency_convertor from "../assets/img/Projects_basic/currency_convertor.png";
-import Digital_clock from "../assets/img/Projects_basic/digital_clock.png";
-import Weather_Web_App from "../assets/img/Projects_basic/weather_web_app.png";
-import loginsignup from "../assets/img/projectReact/loginsignup.png";
-import employeeManagementSystem from "../assets/img/projectReact/employeeManagementSystem.png";
+import calculator from "../assets/img/basicProjects/calculator.png";
+import currency_convertor from "../assets/img/basicProjects/currency_convertor.png";
+import Digital_clock from "../assets/img/basicProjects/digital_clock.png";
+import Weather_Web_App from "../assets/img/basicProjects/weather_web_app.png";
+import loginsignup from "../assets/img/reactProjects/loginsignup.png";
+import employeeManagementSystem from "../assets/img/reactProjects/employeeManagementSystem.png";
+import hospitalManagement from "../assets/img/reactProjects/hispitalManagement.png";
+import onlineRiceMill from "../assets/img/reactProjects/onlineRiceMill.png";
+
+const steponeProjects = [
+  {
+    src: onlineRiceMill,
+    alt: "Online Rice Mill",
+    link: "https://onlinericemill.in/",
+  },
+  {
+    src: hospitalManagement,
+    alt: "Central Care Hospital",
+    link: "https://centralcare.in/",
+  },
+];
 
 
 const vowelwebProjects = [
@@ -61,6 +76,8 @@ const codeosityProjects = [
   },
 ];
 
+
+
 const personalProjects = [
   {
     src: calculator,
@@ -82,7 +99,7 @@ const personalProjects = [
     alt: "Weather Web App",
     link: "https://tausif148.github.io/My-weather-app/",
   },
-    {
+  {
     src: loginsignup,
     alt: "React login signup",
     link: "https://tausif148.github.io/login-signup-react/",
@@ -97,6 +114,38 @@ const personalProjects = [
 const ProjectsList = () => {
   return (
     <>
+      <section
+        className="PorojectsList steponeProject section portfolio"
+        id="stepone"
+      >
+        <div className="container">
+          <div className="row">
+            <div className="section-title">
+              <h2>StepOne</h2>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="portfolio-grid">
+              {steponeProjects.map((proj) => (
+                <a
+                  key={proj.alt}
+                  href={proj.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="portfolio-item"
+                >
+                  <div className="portfolio-item-inner shadow-dark">
+                    <div className="portfolio-img">
+                      <img src={proj.src} alt={proj.alt} />
+                    </div>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
       <section
         className="PorojectsList vowelwebProject section portfolio"
         id="vowelweb"
@@ -128,7 +177,6 @@ const ProjectsList = () => {
           </div>
         </div>
       </section>
-
       <section
         className="PorojectsList codeosityProject section portfolio"
         id="codeosity"
@@ -161,7 +209,6 @@ const ProjectsList = () => {
           </div>
         </div>
       </section>
-
       <section
         className="projectsList personalProject section portfolio"
         id="personal"

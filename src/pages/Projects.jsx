@@ -14,7 +14,7 @@ import BackToTop from '../component/BackToTop';
 function Projects() {
     const sections = [
         { id: 'home', icon: 'fa-home', label: 'Home' },
-        // { id: 'stepone', icon: 'fa-briefcase', label: 'Stepone' },
+        { id: 'stepone', icon: 'fa-briefcase', label: 'StepOne' },
         { id: 'vowelweb', icon: 'fa-briefcase', label: 'Vowelweb' },
         { id: 'codeosity', icon: 'fa-briefcase', label: 'Codeosity' },
         { id: 'personal', icon: 'fa-briefcase', label: 'Personal' },
@@ -32,7 +32,6 @@ function Projects() {
                 <Contact />
                 <Cursor />
                 <BackToTop />
-
             </div>
         </div>
     )
